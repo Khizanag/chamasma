@@ -62,7 +62,21 @@ struct ContentView: View {
         }
     }
 
+    func closure(_ abc: (Int) -> Void) {
+
+    }
+
     private func deleteItems(offsets: IndexSet) {
+//        let closure: (Int) -> () = {
+//
+//        }
+        closure {
+            print($0)
+        }
+
+        let myList: [Int] = [1]
+        _ = myList.filter { $0 % 2 == 0 }.last
+
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
 
