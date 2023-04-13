@@ -16,6 +16,12 @@
 		FBD9482729E89B3500D0B96D /* ChamasmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9482629E89B3500D0B96D /* ChamasmaTests.swift */; };
 		FBD9483129E89B3500D0B96D /* ChamasmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9483029E89B3500D0B96D /* ChamasmaUITests.swift */; };
 		FBD9483329E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */; };
+		FBD9484329E89B9F00D0B96D /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9484229E89B9F00D0B96D /* DesignSystem.swift */; };
+		FBD9484529E89BBD00D0B96D /* DesignSystem+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9484429E89BBD00D0B96D /* DesignSystem+Image.swift */; };
+		FBD9484729E89BF800D0B96D /* DesignSystem+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9484629E89BF800D0B96D /* DesignSystem+Spacing.swift */; };
+		FBD9484929E89C0A00D0B96D /* DesignSystem+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9484829E89C0A00D0B96D /* DesignSystem+Font.swift */; };
+		FBD9484C29E89C3500D0B96D /* DesignSystem+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9484B29E89C3500D0B96D /* DesignSystem+Color.swift */; };
+		FBD9484F29E89C7D00D0B96D /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9484E29E89C7D00D0B96D /* Numeric+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		FBD9482C29E89B3500D0B96D /* ChamasmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChamasmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD9483029E89B3500D0B96D /* ChamasmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaUITests.swift; sourceTree = "<group>"; };
 		FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBD9484229E89B9F00D0B96D /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		FBD9484429E89BBD00D0B96D /* DesignSystem+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesignSystem+Image.swift"; sourceTree = "<group>"; };
+		FBD9484629E89BF800D0B96D /* DesignSystem+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesignSystem+Spacing.swift"; sourceTree = "<group>"; };
+		FBD9484829E89C0A00D0B96D /* DesignSystem+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesignSystem+Font.swift"; sourceTree = "<group>"; };
+		FBD9484B29E89C3500D0B96D /* DesignSystem+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesignSystem+Color.swift"; sourceTree = "<group>"; };
+		FBD9484E29E89C7D00D0B96D /* Numeric+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		FBD9480E29E89B3300D0B96D /* Chamasma */ = {
 			isa = PBXGroup;
 			children = (
+				FBD9484129E89B8600D0B96D /* Common */,
+				FBD9484029E89B7300D0B96D /* Networking */,
+				FBD9483F29E89B6400D0B96D /* DesignSystem */,
 				FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */,
 				FBD9481129E89B3300D0B96D /* Persistence.swift */,
 				FBD9481629E89B3300D0B96D /* ContentView.swift */,
@@ -133,6 +148,49 @@
 				FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */,
 			);
 			path = ChamasmaUITests;
+			sourceTree = "<group>";
+		};
+		FBD9483F29E89B6400D0B96D /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9484A29E89C1D00D0B96D /* Components */,
+				FBD9484229E89B9F00D0B96D /* DesignSystem.swift */,
+				FBD9484829E89C0A00D0B96D /* DesignSystem+Font.swift */,
+				FBD9484429E89BBD00D0B96D /* DesignSystem+Image.swift */,
+				FBD9484629E89BF800D0B96D /* DesignSystem+Spacing.swift */,
+				FBD9484B29E89C3500D0B96D /* DesignSystem+Color.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		FBD9484029E89B7300D0B96D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FBD9484129E89B8600D0B96D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9484D29E89C6D00D0B96D /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FBD9484A29E89C1D00D0B96D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FBD9484D29E89C6D00D0B96D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9484E29E89C7D00D0B96D /* Numeric+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */,
+				FBD9484F29E89C7D00D0B96D /* Numeric+Extension.swift in Sources */,
+				FBD9484729E89BF800D0B96D /* DesignSystem+Spacing.swift in Sources */,
+				FBD9484329E89B9F00D0B96D /* DesignSystem.swift in Sources */,
+				FBD9484929E89C0A00D0B96D /* DesignSystem+Font.swift in Sources */,
+				FBD9484529E89BBD00D0B96D /* DesignSystem+Image.swift in Sources */,
+				FBD9484C29E89C3500D0B96D /* DesignSystem+Color.swift in Sources */,
 				FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */,
 				FBD9481729E89B3300D0B96D /* ContentView.swift in Sources */,
 				FBD9481229E89B3300D0B96D /* Persistence.swift in Sources */,
