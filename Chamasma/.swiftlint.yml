@@ -1,6 +1,15 @@
 # Find all the available rules by running:
 # swiftlint rules
 
+#included: # paths to include during linting. `--path` is ignored if present.
+#  - Chamasma
+#excluded: # paths to ignore during linting. Takes precedence over `included`.
+#  - Carthage
+#  - Pods
+#  - Source/ExcludedFolder
+#  - Source/ExcludedFile.swift
+#  - Source/*/ExcludedFile.swift # Exclude files with a wildcard
+
 # Default rules
 blanket_disable_command: error
 block_based_kvo: error
@@ -79,7 +88,8 @@ superfluous_disable_command: error
 switch_case_alignment: error
 syntactic_sugar: error
 todo: warning
-trailing_comma: error
+#trailing_comma:
+#  severity: error
 trailing_newline: error
 trailing_semicolon: error
 trailing_whitespace: error
@@ -234,22 +244,12 @@ opt_in_rules: # some rules are only opt-in
   - weak_delegate: error
   - xct_specific_matcher: error
   - yoda_condition: error
-
-# FIXME: problem with uncommenting of bottom line -
-#included: # paths to include during linting. `--path` is ignored if present.
-#  - Source
-excluded: # paths to ignore during linting. Takes precedence over `included`.
-  - Carthage
-  - Pods
-  - Source/ExcludedFolder
-  - Source/ExcludedFile.swift
-  - Source/*/ExcludedFile.swift # Exclude files with a wildcard
-
-# Analyzer Rules
-capture_variable: warning
-explicit_self: warning
-typesafe_array_init: warning
-unused_declaration: warning
-unused_import: warning
-    
+  
+  # Analyzer Rules
+  - capture_variable: warning
+  - explicit_self: warning
+  - typesafe_array_init: warning
+  - unused_declaration: warning
+  - unused_import: warning
+  
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, so

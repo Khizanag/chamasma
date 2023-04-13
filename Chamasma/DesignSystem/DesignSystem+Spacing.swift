@@ -6,7 +6,5 @@
 //
 
 public extension DesignSystem {
-    enum Spacing {
-        
-    }
+    enum Spacing { }
 }

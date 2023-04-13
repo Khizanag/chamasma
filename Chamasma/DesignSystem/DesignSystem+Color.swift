@@ -6,7 +6,5 @@
 //
 
 public extension DesignSystem {
-    enum Color {
-        
-    }
+    enum Color { }
 }
