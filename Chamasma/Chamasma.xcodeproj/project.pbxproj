@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */; };
+		FBD9481229E89B3300D0B96D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481129E89B3300D0B96D /* Persistence.swift */; };
+		FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481329E89B3300D0B96D /* Chamasma.xcdatamodeld */; };
+		FBD9481729E89B3300D0B96D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481629E89B3300D0B96D /* ContentView.swift */; };
+		FBD9481929E89B3500D0B96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD9481829E89B3500D0B96D /* Assets.xcassets */; };
+		FBD9481D29E89B3500D0B96D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD9481C29E89B3500D0B96D /* Preview Assets.xcassets */; };
+		FBD9482729E89B3500D0B96D /* ChamasmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9482629E89B3500D0B96D /* ChamasmaTests.swift */; };
+		FBD9483129E89B3500D0B96D /* ChamasmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9483029E89B3500D0B96D /* ChamasmaUITests.swift */; };
+		FBD9483329E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBD9482329E89B3500D0B96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD9480429E89B3300D0B96D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD9480B29E89B3300D0B96D;
+			remoteInfo = Chamasma;
+		};
+		FBD9482D29E89B3500D0B96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD9480429E89B3300D0B96D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD9480B29E89B3300D0B96D;
+			remoteInfo = Chamasma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBD9480C29E89B3300D0B96D /* Chamasma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chamasma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaApp.swift; sourceTree = "<group>"; };
+		FBD9481129E89B3300D0B96D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FBD9481429E89B3300D0B96D /* Chamasma.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chamasma.xcdatamodel; sourceTree = "<group>"; };
+		FBD9481629E89B3300D0B96D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBD9481829E89B3500D0B96D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD9481A29E89B3500D0B96D /* Chamasma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chamasma.entitlements; sourceTree = "<group>"; };
+		FBD9481C29E89B3500D0B96D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBD9482229E89B3500D0B96D /* ChamasmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChamasmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD9482629E89B3500D0B96D /* ChamasmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaTests.swift; sourceTree = "<group>"; };
+		FBD9482C29E89B3500D0B96D /* ChamasmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChamasmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD9483029E89B3500D0B96D /* ChamasmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaUITests.swift; sourceTree = "<group>"; };
+		FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBD9480929E89B3300D0B96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD9481F29E89B3500D0B96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD9482929E89B3500D0B96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBD9480329E89B3300D0B96D = {
+			isa = PBXGroup;
+			children = (
+				FBD9480E29E89B3300D0B96D /* Chamasma */,
+				FBD9482529E89B3500D0B96D /* ChamasmaTests */,
+				FBD9482F29E89B3500D0B96D /* ChamasmaUITests */,
+				FBD9480D29E89B3300D0B96D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBD9480D29E89B3300D0B96D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9480C29E89B3300D0B96D /* Chamasma.app */,
+				FBD9482229E89B3500D0B96D /* ChamasmaTests.xctest */,
+				FBD9482C29E89B3500D0B96D /* ChamasmaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBD9480E29E89B3300D0B96D /* Chamasma */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */,
+				FBD9481129E89B3300D0B96D /* Persistence.swift */,
+				FBD9481629E89B3300D0B96D /* ContentView.swift */,
+				FBD9481829E89B3500D0B96D /* Assets.xcassets */,
+				FBD9481A29E89B3500D0B96D /* Chamasma.entitlements */,
+				FBD9481329E89B3300D0B96D /* Chamasma.xcdatamodeld */,
+				FBD9481B29E89B3500D0B96D /* Preview Content */,
+			);
+			path = Chamasma;
+			sourceTree = "<group>";
+		};
+		FBD9481B29E89B3500D0B96D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9481C29E89B3500D0B96D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBD9482529E89B3500D0B96D /* ChamasmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9482629E89B3500D0B96D /* ChamasmaTests.swift */,
+			);
+			path = ChamasmaTests;
+			sourceTree = "<group>";
+		};
+		FBD9482F29E89B3500D0B96D /* ChamasmaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9483029E89B3500D0B96D /* ChamasmaUITests.swift */,
+				FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */,
+			);
+			path = ChamasmaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBD9480B29E89B3300D0B96D /* Chamasma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD9483629E89B3500D0B96D /* Build configuration list for PBXNativeTarget "Chamasma" */;
+			buildPhases = (
+				FBD9480829E89B3300D0B96D /* Sources */,
+				FBD9480929E89B3300D0B96D /* Frameworks */,
+				FBD9480A29E89B3300D0B96D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chamasma;
+			productName = Chamasma;
+			productReference = FBD9480C29E89B3300D0B96D /* Chamasma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBD9482129E89B3500D0B96D /* ChamasmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD9483929E89B3500D0B96D /* Build configuration list for PBXNativeTarget "ChamasmaTests" */;
+			buildPhases = (
+				FBD9481E29E89B3500D0B96D /* Sources */,
+				FBD9481F29E89B3500D0B96D /* Frameworks */,
+				FBD9482029E89B3500D0B96D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD9482429E89B3500D0B96D /* PBXTargetDependency */,
+			);
+			name = ChamasmaTests;
+			productName = ChamasmaTests;
+			productReference = FBD9482229E89B3500D0B96D /* ChamasmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBD9482B29E89B3500D0B96D /* ChamasmaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD9483C29E89B3500D0B96D /* Build configuration list for PBXNativeTarget "ChamasmaUITests" */;
+			buildPhases = (
+				FBD9482829E89B3500D0B96D /* Sources */,
+				FBD9482929E89B3500D0B96D /* Frameworks */,
+				FBD9482A29E89B3500D0B96D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD9482E29E89B3500D0B96D /* PBXTargetDependency */,
+			);
+			name = ChamasmaUITests;
+			productName = ChamasmaUITests;
+			productReference = FBD9482C29E89B3500D0B96D /* ChamasmaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBD9480429E89B3300D0B96D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FBD9480B29E89B3300D0B96D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FBD9482129E89B3500D0B96D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FBD9480B29E89B3300D0B96D;
+					};
+					FBD9482B29E89B3500D0B96D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FBD9480B29E89B3300D0B96D;
+					};
+				};
+			};
+			buildConfigurationList = FBD9480729E89B3300D0B96D /* Build configuration list for PBXProject "Chamasma" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBD9480329E89B3300D0B96D;
+			productRefGroup = FBD9480D29E89B3300D0B96D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD9480B29E89B3300D0B96D /* Chamasma */,
+				FBD9482129E89B3500D0B96D /* ChamasmaTests */,
+				FBD9482B29E89B3500D0B96D /* ChamasmaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBD9480A29E89B3300D0B96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD9481D29E89B3500D0B96D /* Preview Assets.xcassets in Resources */,
+				FBD9481929E89B3500D0B96D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD9482029E89B3500D0B96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD9482A29E89B3500D0B96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBD9480829E89B3300D0B96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */,
+				FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */,
+				FBD9481729E89B3300D0B96D /* ContentView.swift in Sources */,
+				FBD9481229E89B3300D0B96D /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD9481E29E89B3500D0B96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD9482729E89B3500D0B96D /* ChamasmaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD9482829E89B3500D0B96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD9483329E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift in Sources */,
+				FBD9483129E89B3500D0B96D /* ChamasmaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBD9482429E89B3500D0B96D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD9480B29E89B3300D0B96D /* Chamasma */;
+			targetProxy = FBD9482329E89B3500D0B96D /* PBXContainerItemProxy */;
+		};
+		FBD9482E29E89B3500D0B96D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD9480B29E89B3300D0B96D /* Chamasma */;
+			targetProxy = FBD9482D29E89B3500D0B96D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBD9483429E89B3500D0B96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBD9483529E89B3500D0B96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FBD9483729E89B3500D0B96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Chamasma/Chamasma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Chamasma/Preview Content\"";
+				DEVELOPMENT_TEAM = 487Z879GSQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.giga.khizanishvili.Chamasma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBD9483829E89B3500D0B96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Chamasma/Chamasma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Chamasma/Preview Content\"";
+				DEVELOPMENT_TEAM = 487Z879GSQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.giga.khizanishvili.Chamasma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBD9483A29E89B3500D0B96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 487Z879GSQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.giga.khizanishvili.ChamasmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chamasma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chamasma";
+			};
+			name = Debug;
+		};
+		FBD9483B29E89B3500D0B96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 487Z879GSQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.giga.khizanishvili.ChamasmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chamasma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chamasma";
+			};
+			name = Release;
+		};
+		FBD9483D29E89B3500D0B96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 487Z879GSQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.giga.khizanishvili.ChamasmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chamasma;
+			};
+			name = Debug;
+		};
+		FBD9483E29E89B3500D0B96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 487Z879GSQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.giga.khizanishvili.ChamasmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chamasma;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBD9480729E89B3300D0B96D /* Build configuration list for PBXProject "Chamasma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD9483429E89B3500D0B96D /* Debug */,
+				FBD9483529E89B3500D0B96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD9483629E89B3500D0B96D /* Build configuration list for PBXNativeTarget "Chamasma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD9483729E89B3500D0B96D /* Debug */,
+				FBD9483829E89B3500D0B96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD9483929E89B3500D0B96D /* Build configuration list for PBXNativeTarget "ChamasmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD9483A29E89B3500D0B96D /* Debug */,
+				FBD9483B29E89B3500D0B96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD9483C29E89B3500D0B96D /* Build configuration list for PBXNativeTarget "ChamasmaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD9483D29E89B3500D0B96D /* Debug */,
+				FBD9483E29E89B3500D0B96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBD9481329E89B3300D0B96D /* Chamasma.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBD9481429E89B3300D0B96D /* Chamasma.xcdatamodel */,
+			);
+			currentVersion = FBD9481429E89B3300D0B96D /* Chamasma.xcdatamodel */;
+			path = Chamasma.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBD9480429E89B3300D0B96D /* Project object */;
+}
