@@ -1,3 +1,8 @@
 # DesignSystem
 
-A description of this package.
+A solid group of all design components, that can be required for the product, including:
+- Color
+- Spacing
+- Component
+- Font
+- Image
