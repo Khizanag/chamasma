@@ -1,16 +1,37 @@
 # Find all the available rules by running:
 # swiftlint rules
 
-#included: # paths to include during linting. `--path` is ignored if present.
-#  - Chamasma
-#excluded: # paths to ignore during linting. Takes precedence over `included`.
-#  - Carthage
-#  - Pods
-#  - Source/ExcludedFolder
-#  - Source/ExcludedFile.swift
-#  - Source/*/ExcludedFile.swift # Exclude files with a wildcard
+# Content of table:
+# - included
+# - excluded
+# - disabled_rules
+# - default rules configurations
+# - opt_in_rules
+# - opt_in_rules configurations
+# - analyzer_rules
+# - analyzer_rules configurations
 
-# Default rules
+# MARK: - Included
+
+included: # paths to include during linting. `--path` is ignored if present.
+    - Chamasma
+    - DesignSystem
+
+# MARK: - Excluded
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+    - Carthage
+    - Pods
+    - Source/ExcludedFolder
+    - Source/ExcludedFile.swift
+    - Source/*/ExcludedFile.swift # Exclude files with a wildcard
+
+# MARK: - Disabled rules
+
+# ...
+
+# MARK: - Default rules' configurations
+
 blanket_disable_command:
     severity: error
 block_based_kvo:
@@ -45,7 +66,8 @@ duplicate_enum_cases:
     severity: error
 duplicate_imports:
     severity: error
-duplicated_key_in_dictionary_literal: error
+duplicated_key_in_dictionary_literal:
+    severity: error
 dynamic_inline:
     severity: error
 empty_enum_arguments:
@@ -79,7 +101,8 @@ identifier_name:
     excluded: [“^id$”]
     allowed_symbols: []
     validates_start_with_lowercase: true
-implicit_getter: error
+implicit_getter:
+    severity: error
 inclusive_language:
     severity: warning
     additional_terms: []
@@ -166,8 +189,8 @@ syntactic_sugar:
     severity: error
 todo: warning
 trailing_comma:
-  mandatory_comma: true
-  severity: error
+    mandatory_comma: true
+    severity: error
 trailing_newline:
     severity: error
 trailing_semicolon:
@@ -206,9 +229,9 @@ void_return:
 xctfail_message:
     severity: error
 
-#disabled_rules: # rule identifiers to exclude from running
-#
-opt_in_rules: # some rules are only opt-in
+# MARK: - opt_in_rules
+
+opt_in_rules:
     - accessibility_label_for_image
     - accessibility_trait_for_button
     - anonymous_argument_in_multiline_closure
@@ -240,11 +263,11 @@ opt_in_rules: # some rules are only opt-in
     - empty_xctest_method
     - enum_case_associated_values_count
     - expiring_todo
-    - explicit_acl
-    - explicit_enum_raw_value
+    #  - explicit_acl
+    #  - explicit_enum_raw_value
     - explicit_init
-    - explicit_top_level_acl
-    - explicit_type_interface
+    #  - explicit_top_level_acl
+    #  - explicit_type_interface
     - extension_access_modifier
     - fallthrough
     - fatal_error_message
@@ -260,17 +283,17 @@ opt_in_rules: # some rules are only opt-in
     - identical_operands
     - implicit_return
     - implicitly_unwrapped_optional
-    - indentation_width
+    #  - indentation_width
     - inert_defer
     - joined_default_parameter
     - last_where
     - legacy_multiple
     - legacy_objc_type
-    - let_var_whitespace
+    #  - let_var_whitespace
     - literal_expression_end_indentation
     - local_doc_comment
     - lower_acl_than_parent
-    - missing_docs
+    #  - missing_docs
     - modifier_order
     - multiline_arguments
     - multiline_arguments_brackets
@@ -279,7 +302,7 @@ opt_in_rules: # some rules are only opt-in
     - multiline_parameters
     - multiline_parameters_brackets
     - nimble_operator
-    - no_extension_access_modifier
+    #  - no_extension_access_modifier
     - no_grouping_extension
     - no_magic_numbers
     - nslocalizedstring_key
@@ -292,11 +315,11 @@ opt_in_rules: # some rules are only opt-in
     - override_in_extension
     - pattern_matching_keywords
     - period_spacing
-    - prefer_nimble
+    # - prefer_nimble
     - prefer_self_in_static_references
     - prefer_self_type_over_type_of_self
     - prefer_zero_over_explicit_init
-    - prefixed_toplevel_constant
+    # - prefixed_toplevel_constant
     - private_action
     - private_outlet
     - private_subject
@@ -305,23 +328,23 @@ opt_in_rules: # some rules are only opt-in
     - quick_discouraged_call
     - quick_discouraged_focused_test
     - quick_discouraged_pending_test
-    #  - raw_value_for_camel_cased_codable_enum
+    # - raw_value_for_camel_cased_codable_enum
     - reduce_into
     - redundant_nil_coalescing
     - redundant_type_annotation
-    - required_deinit
-    #  - required_enum_case
+    # - required_deinit
+    # - required_enum_case
     - return_value_from_void_function
     - self_binding
     - shorthand_optional_binding
     - single_test_class
-    - sorted_enum_cases
+    # - sorted_enum_cases
     - sorted_first_last
     - sorted_imports
     - static_operator
     - strict_fileprivate
     - strong_iboutlet
-    - superfluous_else
+    # - superfluous_else
     - switch_case_on_newline
     - test_case_accessibility
     - toggle_bool
@@ -339,12 +362,277 @@ opt_in_rules: # some rules are only opt-in
     - weak_delegate
     - xct_specific_matcher
     - yoda_condition
-    
-    # Analyzer Rules
-    - capture_variable: warning
-    - explicit_self: warning
-    - typesafe_array_init: warning
-    - unused_declaration: warning
-    - unused_import: warning
-  
-reporter: "xcode"
+
+# MARK: - opt_in_rules - configurations
+
+accessibility_label_for_image:
+    severity: error
+accessibility_trait_for_button:
+    severity: error
+anonymous_argument_in_multiline_closure:
+    severity: error
+anyobject_protocol:
+    severity: error
+array_init:
+    severity: error
+attributes:
+    severity: error
+balanced_xctest_lifecycle:
+    severity: error
+closure_body_length:
+    severity: error
+closure_end_indentation:
+    severity: error
+closure_spacing:
+    severity: error
+collection_alignment:
+    severity: error
+comma_inheritance:
+    severity: error
+conditional_returns_on_newline:
+    severity: error
+contains_over_filter_count:
+    severity: error
+contains_over_filter_is_empty:
+    severity: error
+contains_over_first_not_nil:
+    severity: error
+contains_over_range_nil_comparison:
+    severity: error
+convenience_type:
+    severity: error
+direct_return:
+    severity: error
+discarded_notification_center_observer:
+    severity: error
+discouraged_assert:
+    severity: error
+discouraged_none_name:
+    severity: error
+discouraged_object_literal:
+    severity: error
+discouraged_optional_boolean:
+    severity: error
+discouraged_optional_collection:
+    severity: error
+empty_collection_literal:
+    severity: error
+empty_count:
+    severity: error
+empty_string:
+    severity: error
+empty_xctest_method:
+    severity: error
+enum_case_associated_values_count:
+    severity: error
+expiring_todo:
+    severity: error
+#explicit_acl:
+#    severity: error
+#explicit_enum_raw_value:
+#    severity: error
+explicit_init:
+    severity: error
+#explicit_top_level_acl:
+#    severity: error
+#explicit_type_interface:
+#    severity: error
+#extension_access_modifier:
+#    severity: error
+fallthrough:
+    severity: error
+fatal_error_message:
+    severity: error
+file_header:
+    severity: error
+file_name:
+    severity: error
+file_name_no_space:
+    severity: error
+file_types_order:
+    severity: error
+first_where:
+    severity: error
+flatmap_over_map_reduce:
+    severity: error
+force_unwrapping:
+    severity: error
+function_default_parameter_at_end:
+    severity: error
+ibinspectable_in_extension:
+    severity: error
+identical_operands:
+    severity: error
+implicit_return:
+    severity: error
+implicitly_unwrapped_optional:
+    severity: error
+#indentation_width:
+#    severity: error
+inert_defer:
+    severity: error
+joined_default_parameter:
+    severity: error
+last_where:
+    severity: error
+legacy_multiple:
+    severity: error
+legacy_objc_type:
+    severity: error
+#let_var_whitespace:
+#    severity: error
+literal_expression_end_indentation:
+    severity: error
+local_doc_comment:
+    severity: error
+lower_acl_than_parent:
+    severity: error
+#missing_docs:
+#    severity: error
+modifier_order:
+    severity: error
+multiline_arguments:
+    severity: error
+multiline_arguments_brackets:
+    severity: error
+multiline_function_chains:
+    severity: error
+multiline_literal_brackets:
+    severity: error
+multiline_parameters:
+    severity: error
+multiline_parameters_brackets:
+    severity: error
+nimble_operator:
+    severity: error
+# no_extension_access_modifier:
+#     severity: error
+no_grouping_extension:
+    severity: error
+no_magic_numbers:
+    severity: error
+nslocalizedstring_key:
+    severity: error
+nslocalizedstring_require_bundle:
+    severity: error
+number_separator:
+    severity: error
+object_literal:
+    severity: error
+operator_usage_whitespace:
+    severity: error
+optional_enum_case_matching:
+    severity: error
+overridden_super_call:
+    severity: error
+override_in_extension:
+    severity: error
+pattern_matching_keywords:
+    severity: error
+period_spacing:
+    severity: error
+# prefer_nimble:
+#     severity: error
+prefer_self_in_static_references:
+    severity: error
+prefer_self_type_over_type_of_self:
+    severity: error
+prefer_zero_over_explicit_init:
+    severity: error
+# prefixed_toplevel_constant:
+#     severity: error
+private_action:
+    severity: error
+private_outlet:
+    severity: error
+private_subject:
+    severity: error
+prohibited_interface_builder:
+    severity: error
+prohibited_super_call:
+    severity: error
+quick_discouraged_call:
+    severity: error
+quick_discouraged_focused_test:
+    severity: error
+quick_discouraged_pending_test:
+    severity: error
+# raw_value_for_camel_cased_codable_enum:
+#    severity: error
+reduce_into:
+    severity: error
+redundant_nil_coalescing:
+    severity: error
+redundant_type_annotation:
+    severity: error
+# - required_deinit:
+#    severity: error
+# - required_enum_case:
+#    severity: error
+return_value_from_void_function:
+    severity: error
+self_binding:
+    severity: error
+shorthand_optional_binding:
+    severity: error
+single_test_class:
+    severity: error
+#sorted_enum_cases:
+#    severity: error
+sorted_first_last:
+    severity: error
+sorted_imports:
+    severity: error
+static_operator:
+    severity: error
+strict_fileprivate:
+    severity: error
+strong_iboutlet:
+    severity: error
+#superfluous_else:
+#    severity: error
+switch_case_on_newline:
+    severity: error
+test_case_accessibility:
+    severity: error
+toggle_bool:
+    severity: error
+trailing_closure:
+    severity: error
+type_contents_order:
+    severity: error
+unavailable_function:
+    severity: error
+unneeded_parentheses_in_closure_argument:
+    severity: error
+unowned_variable_capture:
+    severity: error
+untyped_error_in_catch:
+    severity: error
+unused_capture_list:
+    severity: error
+vertical_parameter_alignment_on_call:
+    severity: error
+vertical_whitespace_between_cases:
+    severity: error
+vertical_whitespace_closing_braces:
+    severity: error
+vertical_whitespace_opening_braces:
+    severity: error
+weak_delegate:
+    severity: error
+xct_specific_matcher:
+    severity: error
+yoda_condition:
+    severity: error
+
+# MARK: - analyzer_rules
+
+analyzer_rules:
+    - capture_variable
+    - explicit_self
+    - typesafe_array_init
+    - unused_declaration
+    - unused_import
+
+# MARK: - analyzer_rules configurations

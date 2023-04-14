@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */; };
-		FBD9481229E89B3300D0B96D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481129E89B3300D0B96D /* Persistence.swift */; };
+		FBD9481229E89B3300D0B96D /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481129E89B3300D0B96D /* PersistenceController.swift */; };
 		FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481329E89B3300D0B96D /* Chamasma.xcdatamodeld */; };
 		FBD9481729E89B3300D0B96D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481629E89B3300D0B96D /* ContentView.swift */; };
 		FBD9481929E89B3500D0B96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD9481829E89B3500D0B96D /* Assets.xcassets */; };
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		FBD9480C29E89B3300D0B96D /* Chamasma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chamasma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaApp.swift; sourceTree = "<group>"; };
-		FBD9481129E89B3300D0B96D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FBD9481129E89B3300D0B96D /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		FBD9481429E89B3300D0B96D /* Chamasma.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chamasma.xcdatamodel; sourceTree = "<group>"; };
 		FBD9481629E89B3300D0B96D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBD9481829E89B3500D0B96D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				FBD9484129E89B8600D0B96D /* Common */,
 				FBD9484029E89B7300D0B96D /* Networking */,
 				FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */,
-				FBD9481129E89B3300D0B96D /* Persistence.swift */,
+				FBD9481129E89B3300D0B96D /* PersistenceController.swift */,
 				FBD9481629E89B3300D0B96D /* ContentView.swift */,
 				FBD9481829E89B3500D0B96D /* Assets.xcassets */,
 				FBD9481A29E89B3500D0B96D /* Chamasma.entitlements */,
@@ -338,7 +338,7 @@
 				FBD9484F29E89C7D00D0B96D /* Numeric+Extension.swift in Sources */,
 				FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */,
 				FBD9481729E89B3300D0B96D /* ContentView.swift in Sources */,
-				FBD9481229E89B3300D0B96D /* Persistence.swift in Sources */,
+				FBD9481229E89B3300D0B96D /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

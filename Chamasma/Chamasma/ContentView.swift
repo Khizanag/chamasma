@@ -5,8 +5,8 @@
 //  Created by Giga Khizanishvili on 14.04.23.
 //
 
-import SwiftUI
 import CoreData
+import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -20,20 +20,22 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                    if let timeStamp = item.timestamp {
+                        NavigationLink {
+                            Text("Item at \(timeStamp, formatter: itemFormatter)")
+                        } label: {
+                            Text(timeStamp, formatter: itemFormatter)
+                        }
                     }
                 }
                 .onDelete(perform: deleteItems)
             }
             .toolbar {
-#if os(iOS)
+            #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
-#endif
+            #endif
                 ToolbarItem {
                     Button(action: addItem) {
                         Label("Add Item", systemImage: "plus")
@@ -62,21 +64,7 @@ struct ContentView: View {
         }
     }
 
-    func closure(_ abc: (Int) -> Void) {
-
-    }
-
     private func deleteItems(offsets: IndexSet) {
-//        let closure: (Int) -> () = {
-//
-//        }
-        closure {
-            print($0)
-        }
-
-        let myList: [Int] = [1]
-        _ = myList.filter { $0 % 2 == 0 }.last
-
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
 

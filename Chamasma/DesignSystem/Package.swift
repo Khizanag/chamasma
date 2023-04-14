@@ -10,7 +10,8 @@ let package = Package(
         //  and make them visible to other packages.
         .library(
             name: "DesignSystem",
-            targets: ["DesignSystem"]),
+            targets: ["DesignSystem"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,9 +23,11 @@ let package = Package(
         //  and on products in packages this package depends on.
         .target(
             name: "DesignSystem",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "DesignSystemTests",
-            dependencies: ["DesignSystem"]),
+            dependencies: ["DesignSystem"]
+        ),
     ]
 )
