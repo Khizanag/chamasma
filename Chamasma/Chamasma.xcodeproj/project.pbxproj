@@ -19,6 +19,7 @@
 		FBD9484F29E89C7D00D0B96D /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9484E29E89C7D00D0B96D /* Numeric+Extension.swift */; };
 		FBD9485329E8A15F00D0B96D /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = FBD9485229E8A15F00D0B96D /* DesignSystem */; };
 		FBD9485829E8B64D00D0B96D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FBD9485729E8B64D00D0B96D /* .swiftlint.yml */; };
+		FBD9485B29EA0BE600D0B96D /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = FBD9485A29EA0BE600D0B96D /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD9485B29EA0BE600D0B96D /* CodeScanner in Frameworks */,
 				FBD9485329E8A15F00D0B96D /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +198,7 @@
 			name = Chamasma;
 			packageProductDependencies = (
 				FBD9485229E8A15F00D0B96D /* DesignSystem */,
+				FBD9485A29EA0BE600D0B96D /* CodeScanner */,
 			);
 			productName = Chamasma;
 			productReference = FBD9480C29E89B3300D0B96D /* Chamasma.app */;
@@ -269,6 +272,9 @@
 				Base,
 			);
 			mainGroup = FBD9480329E89B3300D0B96D;
+			packageReferences = (
+				FBD9485929EA0BE600D0B96D /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = FBD9480D29E89B3300D0B96D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -701,10 +707,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		FBD9485929EA0BE600D0B96D /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		FBD9485229E8A15F00D0B96D /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
+		};
+		FBD9485A29EA0BE600D0B96D /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBD9485929EA0BE600D0B96D /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 
