@@ -303,7 +303,7 @@ opt_in_rules:
     - multiline_parameters_brackets
     - nimble_operator
     #  - no_extension_access_modifier
-    - no_grouping_extension
+#    - no_mgrouping_extension
     - no_magic_numbers
     - nslocalizedstring_key
     - nslocalizedstring_require_bundle
@@ -507,8 +507,8 @@ nimble_operator:
     severity: error
 # no_extension_access_modifier:
 #     severity: error
-no_grouping_extension:
-    severity: error
+#no_grouping_extension:
+#    severity: error
 no_magic_numbers:
     severity: error
 nslocalizedstring_key:
