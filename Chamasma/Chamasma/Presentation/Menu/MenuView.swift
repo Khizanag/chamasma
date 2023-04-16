@@ -1,5 +1,5 @@
 //
-//  MenuView.swift
+//  MenuCategoryItem.swift
 //  Chamasma
 //
 //  Created by Giga Khizanishvili on 16.04.23.
@@ -9,56 +9,27 @@ import DesignSystem
 import SwiftUI
 
 struct MenuView: View {
-    let image: Image
-    let title: String
+    let categories: [MenuCategory]
 
     // MARK: - Body
     var body: some View {
-            image
-                .resizable()
-                .frame(
-                    width: Constant.Image.width,
-                    height: Constant.Image.height
-                )
-                .scaledToFit()
-                .overlay {
-                    Color.black
-                        .opacity(0.3)
+        ScrollView {
+            LazyVGrid(
+                columns: [.init(spacing: 24), .init(spacing: 24)],
+                spacing: 24
+            ) {
+                ForEach(categories) { category in
+                    MenuCategoryItem(image: category.image, title: category.name)
                 }
-                .overlay(alignment: .bottom) {
-                    ZStack {
-                        Color.white
-                            .opacity(Constant.Title.Background.opacity)
-                            .frame(height: Constant.Title.Background.height)
-
-                        Text(title)
-                    }
-                    .offset(y: -20)
-                }
-                .cornerRadius(10)
-    }
-}
-
-// MARK: - Constants
-extension MenuView {
-    enum Constant {
-        enum Image {
-            static let width: CGFloat = 160
-            static let height: CGFloat = 150
-        }
-
-        enum Title {
-            enum Background {
-                static let opacity = 0.8
-                static let height: CGFloat = 24
             }
+            .padding()
         }
     }
 }
 
-// MARK: - Preview
-struct MenuView_Previews: PreviewProvider {
+// MARK: - Previews
+struct MenuViewPreviews: PreviewProvider {
     static var previews: some View {
-        MenuView(image: DesignSystem.Image.burger, title: "BURGER")
+        MenuView(categories: (1...16).map { _ in MenuCategory.example })
     }
 }

@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB56453F29EC2DEC00579D1F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB56453E29EC2DEC00579D1F /* MenuView.swift */; };
+		FB56454129EC46C700579D1F /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB56454029EC46C700579D1F /* MenuCategory.swift */; };
 		FBBB908F29EAD38E0003DEF7 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB908E29EAD38E0003DEF7 /* Meal.swift */; };
 		FBBB909129EAD3AD0003DEF7 /* Allergen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB909029EAD3AC0003DEF7 /* Allergen.swift */; };
 		FBBB909329EAD4560003DEF7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB909229EAD4560003DEF7 /* Menu.swift */; };
-		FBCA8FE429EC1913002B6972 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA8FE329EC1913002B6972 /* MenuView.swift */; };
+		FBCA8FE429EC1913002B6972 /* MenuCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA8FE329EC1913002B6972 /* MenuCategoryItem.swift */; };
 		FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */; };
 		FBD9481229E89B3300D0B96D /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481129E89B3300D0B96D /* PersistenceController.swift */; };
 		FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481329E89B3300D0B96D /* Chamasma.xcdatamodeld */; };
@@ -44,12 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB56453E29EC2DEC00579D1F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FB56454029EC46C700579D1F /* MenuCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
 		FBBB908E29EAD38E0003DEF7 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		FBBB909029EAD3AC0003DEF7 /* Allergen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allergen.swift; sourceTree = "<group>"; };
 		FBBB909229EAD4560003DEF7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		FBCA8FDF29EAE53E002B6972 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		FBCA8FE029EAE79A002B6972 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
-		FBCA8FE329EC1913002B6972 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FBCA8FE329EC1913002B6972 /* MenuCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategoryItem.swift; sourceTree = "<group>"; };
 		FBD9480C29E89B3300D0B96D /* Chamasma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chamasma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaApp.swift; sourceTree = "<group>"; };
 		FBD9481129E89B3300D0B96D /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 				FBBB908E29EAD38E0003DEF7 /* Meal.swift */,
 				FBBB909029EAD3AC0003DEF7 /* Allergen.swift */,
 				FBBB909229EAD4560003DEF7 /* Menu.swift */,
+				FB56454029EC46C700579D1F /* MenuCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,7 +122,8 @@
 		FBCA8FE129EC18EC002B6972 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				FBCA8FE329EC1913002B6972 /* MenuView.swift */,
+				FBCA8FE329EC1913002B6972 /* MenuCategoryItem.swift */,
+				FB56453E29EC2DEC00579D1F /* MenuView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -392,11 +398,13 @@
 				FBD9484F29E89C7D00D0B96D /* Numeric+Extension.swift in Sources */,
 				FBBB909329EAD4560003DEF7 /* Menu.swift in Sources */,
 				FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */,
-				FBCA8FE429EC1913002B6972 /* MenuView.swift in Sources */,
+				FBCA8FE429EC1913002B6972 /* MenuCategoryItem.swift in Sources */,
 				FBD9481729E89B3300D0B96D /* ContentView.swift in Sources */,
 				FBBB908F29EAD38E0003DEF7 /* Meal.swift in Sources */,
 				FBBB909129EAD3AD0003DEF7 /* Allergen.swift in Sources */,
+				FB56454129EC46C700579D1F /* MenuCategory.swift in Sources */,
 				FBD9481229E89B3300D0B96D /* PersistenceController.swift in Sources */,
+				FB56453F29EC2DEC00579D1F /* MenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
