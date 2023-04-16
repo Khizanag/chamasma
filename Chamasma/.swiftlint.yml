@@ -27,8 +27,8 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
     - Source/*/ExcludedFile.swift # Exclude files with a wildcard
 
 # MARK: - Disabled rules
-
-# ...
+disabled_rules:
+    - nesting
 
 # MARK: - Default rules' configurations
 
@@ -135,8 +135,8 @@ mark:
     severity: error
 multiple_closures_with_trailing_closure:
     severity: error
-nesting:
-    severity: error
+#nesting:
+#    severity: error
 no_fallthrough_only:
     severity: error
 no_space_in_method_call:
@@ -304,7 +304,7 @@ opt_in_rules:
     - nimble_operator
     #  - no_extension_access_modifier
 #    - no_mgrouping_extension
-    - no_magic_numbers
+#    - no_magic_numbers
     - nslocalizedstring_key
     - nslocalizedstring_require_bundle
     - number_separator
@@ -509,8 +509,8 @@ nimble_operator:
 #     severity: error
 #no_grouping_extension:
 #    severity: error
-no_magic_numbers:
-    severity: error
+#no_magic_numbers:
+#    severity: error
 nslocalizedstring_key:
     severity: error
 nslocalizedstring_require_bundle:
