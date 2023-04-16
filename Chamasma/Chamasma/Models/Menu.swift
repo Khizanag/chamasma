@@ -14,9 +14,3 @@ struct Menu {
     let image: Image
     let categories: [MenuCategory]
 }
-
-// MARK: - MenuCategory
-struct MenuCategory {
-    let name: String
-    let items: [Meal]
-}
