@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB2C6B1129EDA84500221CEF /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = FB2C6B1029EDA84500221CEF /* Common */; };
+		FB2C6B1429EDB64800221CEF /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = FB2C6B1329EDB64800221CEF /* Networking */; };
 		FB56453F29EC2DEC00579D1F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB56453E29EC2DEC00579D1F /* MenuView.swift */; };
 		FB56454129EC46C700579D1F /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB56454029EC46C700579D1F /* MenuCategory.swift */; };
 		FBBB908F29EAD38E0003DEF7 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB908E29EAD38E0003DEF7 /* Meal.swift */; };
@@ -54,7 +55,6 @@
 		FBBB909029EAD3AC0003DEF7 /* Allergen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allergen.swift; sourceTree = "<group>"; };
 		FBBB909229EAD4560003DEF7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		FBCA8FDF29EAE53E002B6972 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
-		FBCA8FE029EAE79A002B6972 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		FBCA8FE329EC1913002B6972 /* MenuCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategoryItem.swift; sourceTree = "<group>"; };
 		FBD9480C29E89B3300D0B96D /* Chamasma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chamasma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaApp.swift; sourceTree = "<group>"; };
@@ -69,7 +69,6 @@
 		FBD9482C29E89B3500D0B96D /* ChamasmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChamasmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD9483029E89B3500D0B96D /* ChamasmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaUITests.swift; sourceTree = "<group>"; };
 		FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FBD9485029E89EEC00D0B96D /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		FBD9485729E8B64D00D0B96D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +79,7 @@
 			files = (
 				FBD9485B29EA0BE600D0B96D /* CodeScanner in Frameworks */,
 				FBD9485329E8A15F00D0B96D /* DesignSystem in Frameworks */,
+				FB2C6B1429EDB64800221CEF /* Networking in Frameworks */,
 				FB2C6B1129EDA84500221CEF /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,11 +115,9 @@
 		FBCA8FDE29EAE53E002B6972 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				FB2C6B1229EDB2AF00221CEF /* Networking */,
 				FB2C6B0F29EDA79300221CEF /* Common */,
-				FBD9485029E89EEC00D0B96D /* DesignSystem */,
+				FB2C6B1229EDB2AF00221CEF /* Networking */,
 				FBCA8FDF29EAE53E002B6972 /* DesignSystem */,
-				FBCA8FE029EAE79A002B6972 /* DesignSystem */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -233,6 +231,7 @@
 				FBD9485229E8A15F00D0B96D /* DesignSystem */,
 				FBD9485A29EA0BE600D0B96D /* CodeScanner */,
 				FB2C6B1029EDA84500221CEF /* Common */,
+				FB2C6B1329EDB64800221CEF /* Networking */,
 			);
 			productName = Chamasma;
 			productReference = FBD9480C29E89B3300D0B96D /* Chamasma.app */;
@@ -282,7 +281,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					FBD9480B29E89B3300D0B96D = {
 						CreatedOnToolsVersion = 14.2;
@@ -453,6 +452,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -513,6 +513,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -542,6 +543,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Chamasma/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -584,6 +586,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Chamasma/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -624,6 +627,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 487Z879GSQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
@@ -647,6 +651,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 487Z879GSQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
@@ -669,6 +674,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 487Z879GSQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
@@ -691,6 +697,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 487Z879GSQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
@@ -763,6 +770,10 @@
 		FB2C6B1029EDA84500221CEF /* Common */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Common;
+		};
+		FB2C6B1329EDB64800221CEF /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
 		};
 		FBD9485229E8A15F00D0B96D /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
