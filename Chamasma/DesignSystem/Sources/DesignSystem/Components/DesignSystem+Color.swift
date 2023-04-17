@@ -1,6 +1,6 @@
 //
 //  DesignSystem+Color.swift
-//  Chamasma
+//  DesignSystem
 //
 //  Created by Giga Khizanishvili on 14.04.23.
 //
