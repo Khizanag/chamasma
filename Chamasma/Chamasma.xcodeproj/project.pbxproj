@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		FB2C6B0F29EDA79300221CEF /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
+		FB2C6B1229EDB2AF00221CEF /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 		FB56453E29EC2DEC00579D1F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FB56454029EC46C700579D1F /* MenuCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
 		FBBB908E29EAD38E0003DEF7 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		FBCA8FDE29EAE53E002B6972 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				FB2C6B1229EDB2AF00221CEF /* Networking */,
 				FB2C6B0F29EDA79300221CEF /* Common */,
 				FBD9485029E89EEC00D0B96D /* DesignSystem */,
 				FBCA8FDF29EAE53E002B6972 /* DesignSystem */,
@@ -167,7 +169,6 @@
 			children = (
 				FBCA8FE229EC18F9002B6972 /* Presentation */,
 				FBBB908D29EAD3800003DEF7 /* Models */,
-				FBD9484029E89B7300D0B96D /* Networking */,
 				FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */,
 				FBD9481129E89B3300D0B96D /* PersistenceController.swift */,
 				FBD9481629E89B3300D0B96D /* ContentView.swift */,
@@ -202,13 +203,6 @@
 				FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */,
 			);
 			path = ChamasmaUITests;
-			sourceTree = "<group>";
-		};
-		FBD9484029E89B7300D0B96D /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		FBD9485129E8A15F00D0B96D /* Frameworks */ = {
@@ -476,8 +470,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -530,8 +524,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
