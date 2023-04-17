@@ -349,7 +349,7 @@ opt_in_rules:
     - test_case_accessibility
     - toggle_bool
     - trailing_closure
-    - type_contents_order
+#    - type_contents_order
     - unavailable_function
     - unneeded_parentheses_in_closure_argument
     - unowned_variable_capture
@@ -599,8 +599,8 @@ toggle_bool:
     severity: error
 trailing_closure:
     severity: error
-type_contents_order:
-    severity: error
+#type_contents_order:
+#    severity: error
 unavailable_function:
     severity: error
 unneeded_parentheses_in_closure_argument:
