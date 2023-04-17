@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2C6B1129EDA84500221CEF /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = FB2C6B1029EDA84500221CEF /* Common */; };
 		FB56453F29EC2DEC00579D1F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB56453E29EC2DEC00579D1F /* MenuView.swift */; };
 		FB56454129EC46C700579D1F /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB56454029EC46C700579D1F /* MenuCategory.swift */; };
 		FBBB908F29EAD38E0003DEF7 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB908E29EAD38E0003DEF7 /* Meal.swift */; };
@@ -22,7 +23,6 @@
 		FBD9482729E89B3500D0B96D /* ChamasmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9482629E89B3500D0B96D /* ChamasmaTests.swift */; };
 		FBD9483129E89B3500D0B96D /* ChamasmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9483029E89B3500D0B96D /* ChamasmaUITests.swift */; };
 		FBD9483329E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */; };
-		FBD9484F29E89C7D00D0B96D /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9484E29E89C7D00D0B96D /* Numeric+Extension.swift */; };
 		FBD9485329E8A15F00D0B96D /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = FBD9485229E8A15F00D0B96D /* DesignSystem */; };
 		FBD9485829E8B64D00D0B96D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FBD9485729E8B64D00D0B96D /* .swiftlint.yml */; };
 		FBD9485B29EA0BE600D0B96D /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = FBD9485A29EA0BE600D0B96D /* CodeScanner */; };
@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB2C6B0F29EDA79300221CEF /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
 		FB56453E29EC2DEC00579D1F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FB56454029EC46C700579D1F /* MenuCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
 		FBBB908E29EAD38E0003DEF7 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		FBD9482C29E89B3500D0B96D /* ChamasmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChamasmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD9483029E89B3500D0B96D /* ChamasmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaUITests.swift; sourceTree = "<group>"; };
 		FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FBD9484E29E89C7D00D0B96D /* Numeric+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extension.swift"; sourceTree = "<group>"; };
 		FBD9485029E89EEC00D0B96D /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		FBD9485729E8B64D00D0B96D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +79,7 @@
 			files = (
 				FBD9485B29EA0BE600D0B96D /* CodeScanner in Frameworks */,
 				FBD9485329E8A15F00D0B96D /* DesignSystem in Frameworks */,
+				FB2C6B1129EDA84500221CEF /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +114,8 @@
 		FBCA8FDE29EAE53E002B6972 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				FB2C6B0F29EDA79300221CEF /* Common */,
+				FBD9485029E89EEC00D0B96D /* DesignSystem */,
 				FBCA8FDF29EAE53E002B6972 /* DesignSystem */,
 				FBCA8FE029EAE79A002B6972 /* DesignSystem */,
 			);
@@ -141,7 +144,6 @@
 			children = (
 				FBCA8FDE29EAE53E002B6972 /* Packages */,
 				FBD9485729E8B64D00D0B96D /* .swiftlint.yml */,
-				FBD9485029E89EEC00D0B96D /* DesignSystem */,
 				FBD9480E29E89B3300D0B96D /* Chamasma */,
 				FBD9482529E89B3500D0B96D /* ChamasmaTests */,
 				FBD9482F29E89B3500D0B96D /* ChamasmaUITests */,
@@ -165,7 +167,6 @@
 			children = (
 				FBCA8FE229EC18F9002B6972 /* Presentation */,
 				FBBB908D29EAD3800003DEF7 /* Models */,
-				FBD9484129E89B8600D0B96D /* Common */,
 				FBD9484029E89B7300D0B96D /* Networking */,
 				FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */,
 				FBD9481129E89B3300D0B96D /* PersistenceController.swift */,
@@ -210,22 +211,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		FBD9484129E89B8600D0B96D /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				FBD9484D29E89C6D00D0B96D /* Extensions */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		FBD9484D29E89C6D00D0B96D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FBD9484E29E89C7D00D0B96D /* Numeric+Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		FBD9485129E8A15F00D0B96D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +238,7 @@
 			packageProductDependencies = (
 				FBD9485229E8A15F00D0B96D /* DesignSystem */,
 				FBD9485A29EA0BE600D0B96D /* CodeScanner */,
+				FB2C6B1029EDA84500221CEF /* Common */,
 			);
 			productName = Chamasma;
 			productReference = FBD9480C29E89B3300D0B96D /* Chamasma.app */;
@@ -395,7 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */,
-				FBD9484F29E89C7D00D0B96D /* Numeric+Extension.swift in Sources */,
 				FBBB909329EAD4560003DEF7 /* Menu.swift in Sources */,
 				FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */,
 				FBCA8FE429EC1913002B6972 /* MenuCategoryItem.swift in Sources */,
@@ -781,6 +766,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FB2C6B1029EDA84500221CEF /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
 		FBD9485229E8A15F00D0B96D /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
