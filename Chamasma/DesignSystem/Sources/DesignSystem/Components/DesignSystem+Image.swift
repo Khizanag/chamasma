@@ -11,5 +11,11 @@ public extension DesignSystem {
     enum Image {
         public static let burger = SwiftUI.Image("burger")
         public static let leafFilled = SwiftUI.Image(systemName: "leaf.fill")
+
+        public enum Star {
+            public static let unfilled = SwiftUI.Image(systemName: "star")
+            public static let filled = SwiftUI.Image(systemName: "star.fill")
+            public static let leadingHalfFilled = SwiftUI.Image(systemName: "star.leadinghalf.filled")
+        }
     }
 }
