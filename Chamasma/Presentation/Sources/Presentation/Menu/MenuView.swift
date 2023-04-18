@@ -5,6 +5,7 @@
 //  Created by Giga Khizanishvili on 16.04.23.
 //
 
+import Domain
 import DesignSystem
 import SwiftUI
 

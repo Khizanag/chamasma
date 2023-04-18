@@ -9,20 +9,15 @@ import DesignSystem
 import SwiftUI
 
 // MARK: - MenuCategory
-struct MenuCategory: Identifiable {
-    let id = UUID()
-    let name: String
-    let image: Image
-    let items: [Meal]
-}
+public struct MenuCategory: Identifiable {
+    public let id = UUID()
+    public let name: String
+    public let image: Image
+    public let items: [Meal]
 
-// MARK: - Example
-extension MenuCategory {
-    static var example: Self {
-        Self(
-            name: "Category #\(Int.random(in: 1...100))",
-            image: DesignSystem.Image.burger,
-            items: []
-        )
+    public init(name: String, image: Image, items: [Meal]) {
+        self.name = name
+        self.image = image
+        self.items = items
     }
 }
