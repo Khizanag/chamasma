@@ -1,6 +1,6 @@
 //
 //  MenuCategory.swift
-//  Chamasma
+//  Domain
 //
 //  Created by Giga Khizanishvili on 16.04.23.
 //
