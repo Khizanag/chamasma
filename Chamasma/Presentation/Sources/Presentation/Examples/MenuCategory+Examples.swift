@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  MenuCategory+Examples.swift
 //  
 //
 //  Created by Giga Khizanishvili on 18.04.23.
