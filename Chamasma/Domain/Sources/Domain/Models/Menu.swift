@@ -8,9 +8,21 @@
 import SwiftUI
 
 // MARK: - Menu
-struct Menu {
-    let name: String
-    let description: String
-    let image: Image
-    let categories: [MenuCategory]
+public struct Menu {
+    public let name: String
+    public let description: String
+    public let image: Image
+    public let categories: [MenuCategory]
+
+    public init(
+        name: String,
+        description: String,
+        image: Image,
+        categories: [MenuCategory]
+    ) {
+        self.name = name
+        self.description = description
+        self.image = image
+        self.categories = categories
+    }
 }

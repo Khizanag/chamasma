@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB10BF3929EEE56700F682B7 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = FB10BF3829EEE56700F682B7 /* Domain */; };
+		FB10BF3B29EEE57200F682B7 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = FB10BF3A29EEE57200F682B7 /* Presentation */; };
 		FB2C6B1129EDA84500221CEF /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = FB2C6B1029EDA84500221CEF /* Common */; };
 		FB2C6B1429EDB64800221CEF /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = FB2C6B1329EDB64800221CEF /* Networking */; };
 		FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */; };
@@ -67,9 +69,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB10BF3929EEE56700F682B7 /* Domain in Frameworks */,
 				FBD9485B29EA0BE600D0B96D /* CodeScanner in Frameworks */,
 				FBD9485329E8A15F00D0B96D /* DesignSystem in Frameworks */,
 				FB2C6B1429EDB64800221CEF /* Networking in Frameworks */,
+				FB10BF3B29EEE57200F682B7 /* Presentation in Frameworks */,
 				FB2C6B1129EDA84500221CEF /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +198,8 @@
 				FBD9485A29EA0BE600D0B96D /* CodeScanner */,
 				FB2C6B1029EDA84500221CEF /* Common */,
 				FB2C6B1329EDB64800221CEF /* Networking */,
+				FB10BF3829EEE56700F682B7 /* Domain */,
+				FB10BF3A29EEE57200F682B7 /* Presentation */,
 			);
 			productName = Chamasma;
 			productReference = FBD9480C29E89B3300D0B96D /* Chamasma.app */;
@@ -723,6 +729,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FB10BF3829EEE56700F682B7 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+		FB10BF3A29EEE57200F682B7 /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
 		FB2C6B1029EDA84500221CEF /* Common */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Common;
