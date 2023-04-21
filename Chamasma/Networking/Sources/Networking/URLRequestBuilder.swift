@@ -29,7 +29,7 @@ public class URLRequestBuilder: Builder {
     private var request: URLRequest!
 
     public func reset() -> Self {
-        // TODO: implement
+        request = URLRequest(url: URL(string: "github.com/khizanag/chamasma")!)
         return self
     }
 
