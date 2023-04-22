@@ -17,23 +17,6 @@ public struct MealCell: View {
         self.meal = meal
     }
 
-    // MARK: - Init
-    public init(
-        name: String,
-        description: String,
-        price: Double,
-        rating: Double,
-        image: Image,
-        isPopular: Bool
-    ) {
-        self.name = name
-        self.description = description
-        self.price = price
-        self.rating = rating
-        self.image = image
-        self.isPopular = isPopular
-    }
-
     // MARK: - Body
     public var body: some View {
         VStack(alignment: .leading, spacing: 12) {
