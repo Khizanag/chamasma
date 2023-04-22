@@ -5,7 +5,6 @@
 //  Created by Giga Khizanishvili on 16.04.23.
 //
 
-import DesignSystem
 import SwiftUI
 
 // MARK: - MenuCategory
