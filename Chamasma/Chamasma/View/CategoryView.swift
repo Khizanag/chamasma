@@ -12,6 +12,7 @@ public struct CategoryView: View {
     // MARK: - Properties
     public let title: String
     // TODO: pass [CategoryItemModel] when MealCell will be refactored to take model not properties
+
     // MARK: - Body
     public var body: some View {
         ScrollView {
@@ -21,21 +22,24 @@ public struct CategoryView: View {
             }
         }
     }
+
     private var header: some View {
         VStack {
             imageHeader
             ListSectionHeader(title: title)
         }
     }
+
     private var imageHeader: some View {
         DesignSystem.Image.burger
             .resizable()
             .frame(height: 160)
             .cornerRadius(8)
     }
+
     private var categoryItemList: some View {
         VStack(alignment: .leading) {
-            ForEach((1...10), id: \.self) { _ in // TODO: will iterate given array
+            ForEach(1...10V, id: \.self) { _ in // TODO: will iterate given array
                 MealCell(
                     name: "Cheesburger",
                     description: "Cheesburger, Regular Bun, ketchup, pickle",

@@ -10,9 +10,11 @@ import SwiftUI
 public struct ListSectionHeader: View {
     // MARK: - Properties
     public let title: String
+
     public init(title: String) {
         self.title = title
     }
+
     // MARK: - Body
     public var body: some View {
         HStack {

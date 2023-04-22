@@ -16,6 +16,7 @@ public struct MealCell: View {
     public let image: Image
     public let isPopular: Bool
 
+    // MARK: - Init
     public init(
         name: String,
         description: String,
@@ -31,6 +32,7 @@ public struct MealCell: View {
         self.image = image
         self.isPopular = isPopular
     }
+
     // MARK: - Body
     public var body: some View {
         VStack(alignment: .leading, spacing: 12) {
