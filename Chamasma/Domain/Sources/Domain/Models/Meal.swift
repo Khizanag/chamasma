@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct Meal {
+public struct Meal: Identifiable {
     public let id = UUID()
     public let name: String
     public let description: String
@@ -48,19 +48,5 @@ public struct Meal {
         self.isPopular = isPopular
         self.isSpicy = isSpicy
         self.allergens = allergens
-    }
-}
-
-extension Meal: Identifiable, Hashable {
-    var identifier: String {
-        return UUID().uuidString
-    }
-    
-    public func hash(into hasher: inout Hasher) {
-        return hasher.combine(identifier)
-    }
-    
-    public static func == (lhs: Meal, rhs: Meal) -> Bool {
-        return lhs.identifier == rhs.identifier
     }
 }

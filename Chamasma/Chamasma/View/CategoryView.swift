@@ -41,7 +41,7 @@ public struct CategoryView: View {
 
     private var categoryItemList: some View {
         VStack(alignment: .leading) {
-            ForEach(meals, id: \.self) { meal in
+            ForEach(meals) { meal in
                 MealCell(meal: meal)
             }
         }
@@ -55,9 +55,7 @@ struct SwiftUIView_Previews: PreviewProvider {
             Color.gray
             CategoryView(
                 title: "Burger",
-                meals: Meal.examples.allCases.map { meal in
-                    meal.example
-                }
+                meals: Meal.Example.meals
             )
                 .padding()
         }
