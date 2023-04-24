@@ -5,7 +5,7 @@
 //  Created by Giga Khizanishvili on 15.04.23.
 //
 
-public enum Allergen: Hashable {
+public enum Allergen {
     case peanuts
     case treeNuts
     case shellfish
