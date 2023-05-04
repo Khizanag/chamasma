@@ -39,7 +39,7 @@ public struct CategoryView: View {
 
     private var categoryItemList: some View {
         VStack(alignment: .leading) {
-            ForEach(1...10V, id: \.self) { _ in // TODO: will iterate given array
+            ForEach(1...10, id: \.self) { _ in // TODO: will iterate given array
                 MealCell(
                     name: "Cheesburger",
                     description: "Cheesburger, Regular Bun, ketchup, pickle",
