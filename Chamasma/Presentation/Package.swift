@@ -16,12 +16,14 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../Domain"),
+        .package(path: "../DesignSystem"),
     ],
     targets: [
         .target(
             name: "Presentation",
             dependencies: [
                 "Domain",
+                "DesignSystem",
             ]
         ),
         .testTarget(

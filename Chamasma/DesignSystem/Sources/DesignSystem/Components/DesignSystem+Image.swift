@@ -17,5 +17,12 @@ public extension DesignSystem {
             public static let filled = SwiftUI.Image(systemName: "star.fill")
             public static let leadingHalfFilled = SwiftUI.Image(systemName: "star.leadinghalf.filled")
         }
+
+        public enum AdditionalInfo {
+            public static let vegan = SwiftUI.Image("vegan")
+            public static let vegetarian = SwiftUI.Image("vegetarian")
+            public static let glutenFree = SwiftUI.Image("gluten_free")
+            public static let spicy = SwiftUI.Image("spicy")
+        }
     }
 }
