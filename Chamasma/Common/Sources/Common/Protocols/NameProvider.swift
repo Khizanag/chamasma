@@ -1,6 +1,6 @@
 //
 //  NameProvider.swift
-//  
+//
 //
 //  Created by Giga Khizanishvili on 17.04.23.
 //
