@@ -17,7 +17,7 @@ struct RoundButton: View {
 
     var body: some View {
         Button {
-            print("Round Button clicked")
+            print("Round Button clicked") // TODO: discuss and add action into model
         } label: {
             model.image.name
                 .frame(width: model.size.value, height: model.size.value)
