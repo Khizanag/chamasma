@@ -12,16 +12,6 @@ struct RoundButtonModel {
     let image: RoundButtonImage
     let state: RoundButtonState
     let size: RoundButtonSize
-
-    init(
-        image: RoundButtonImage,
-        state: RoundButtonState,
-        size: RoundButtonSize
-    ) {
-        self.image = image
-        self.state = state
-        self.size = size
-    }
 }
 
 public enum RoundButtonImage {
