@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// MARK: - Menu
 public struct Menu {
     public let name: String
     public let description: String
