@@ -24,70 +24,19 @@ struct RoundButtonModel {
     }
 }
 
-extension RoundButtonModel {
-    enum RoundButtonImage {
-        case plus
-        case search
-        case backArrow
-        case close
+public enum RoundButtonImage {
+    case plus
+    case search
+    case backArrow
+    case close
+}
 
-        var name: Image {
-            switch self {
-            case .plus:
-                return Image(systemName: "plus")
-            case .search:
-                return Image(systemName: "magnifyingglass")
-            case .backArrow:
-                return Image(systemName: "arrow.backward")
-            case .close:
-                return Image(systemName: "xmark")
-            }
-        }
-    }
+public enum RoundButtonState {
+    case filled
+    case clear
+}
 
-    enum RoundButtonState {
-        case filled
-        case clear
-
-        var backgroundColor: Color {
-            switch self {
-            case .filled:
-                return Color(hex: "4ED199") ?? .black
-            case .clear:
-                return .clear
-            }
-        }
-
-        var foregroundColor: Color {
-            switch self {
-            case .filled:
-                return .white
-            case .clear:
-                return Color(hex: "4ED199") ?? .black
-            }
-        }
-    }
-
-    enum RoundButtonSize {
-        case large
-        case normal
-
-        var value: CGFloat {
-            switch self {
-            case .large:
-                return 100
-            case .normal:
-                return 40
-            }
-        }
-
-        var font: CGFloat {
-            switch self {
-            case .large:
-                return 50
-            case .normal:
-                return 20
-            }
-        }
-    }
+public enum RoundButtonSize {
+    case large
+    case normal
 }
