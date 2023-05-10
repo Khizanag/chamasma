@@ -16,7 +16,6 @@
 included: # paths to include during linting. `--path` is ignored if present.
     - Chamasma
     - DesignSystem
-    - Common
 
 # MARK: - Excluded
 
