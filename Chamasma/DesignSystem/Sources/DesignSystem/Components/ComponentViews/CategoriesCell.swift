@@ -45,6 +45,7 @@ struct CategoriesCell_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.gray
+
             CategoriesCell(
                 title: "Burger",
                 isSelected: false
