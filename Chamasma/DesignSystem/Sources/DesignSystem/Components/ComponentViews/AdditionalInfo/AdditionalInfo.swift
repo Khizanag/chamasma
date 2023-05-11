@@ -58,12 +58,13 @@ private extension AdditionalInfoState {
 }
 
 struct AdditionalInfo_Previews: PreviewProvider {
+    static let models = AdditionalInfoState.allCases.map { AdditionalInfoModel(state: $0) }
+
     static var previews: some View {
         VStack {
-            AdditionalInfo(model: .init(state: .vegan))
-            AdditionalInfo(model: .init(state: .vegetarian))
-            AdditionalInfo(model: .init(state: .glutenFree))
-            AdditionalInfo(model: .init(state: .spicy))
+            ForEach(models, id: \.self) { model in
+                AdditionalInfo(model: model)
+            }
         }
     }
 }

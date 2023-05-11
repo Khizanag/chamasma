@@ -8,12 +8,8 @@
 import Common
 import SwiftUI
 
-struct AdditionalInfoModel {
+struct AdditionalInfoModel: Hashable {
     let state: AdditionalInfoState
-
-    init(state: AdditionalInfoState) {
-        self.state = state
-    }
 }
 
 public enum AdditionalInfoState: CaseIterable {
