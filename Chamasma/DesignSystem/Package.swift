@@ -15,11 +15,14 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(path: "../Common"),
     ],
     targets: [
         .target(
             name: "DesignSystem",
-            dependencies: []
+            dependencies: [
+                "Common",
+            ]
         ),
         .testTarget(
             name: "DesignSystemTests",
