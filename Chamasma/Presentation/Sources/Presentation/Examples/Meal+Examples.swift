@@ -1,19 +1,19 @@
 //
 //  Menu+Examples.swift
-//  
+//
 //
 //  Created by Mariam Ormotsadze on 23.04.23.
 //
 
-import Domain
 import DesignSystem
+import Domain
 
 // MARK: - Example
 public extension Meal {
     enum Example {
-        
+
         public static let meals = [cheesburger, chiliCheesburger, hamburger, vegetarianBurger, tofu, salad]
-        
+
         static let cheesburger = Meal(
             name: "Cheesebuger",
             description: "Cheese, Burger, Beef, ketchup, Lettuce",
@@ -26,8 +26,9 @@ public extension Meal {
             isGlutenFree: false,
             isPopular: true,
             isSpicy: false,
-            allergens: [])
-        
+            allergens: []
+        )
+
         static let chiliCheesburger = Meal(
             name: "Chili Cheesebuger",
             description: "Chili, Cheese, Burger, Beef, ketchup, Lettuce",
@@ -40,8 +41,9 @@ public extension Meal {
             isGlutenFree: false,
             isPopular: true,
             isSpicy: true,
-            allergens: [])
-        
+            allergens: []
+        )
+
         static let hamburger = Meal(
             name: "Hamburger",
             description: "Burger, Beef, ketchup, Lettuce",
@@ -54,8 +56,9 @@ public extension Meal {
             isGlutenFree: false,
             isPopular: true,
             isSpicy: false,
-            allergens: [])
-        
+            allergens: []
+        )
+
         static let vegetarianBurger = Meal(
             name: "Vegetarian Burger",
             description: "Burger, Tomato, Lettuce, Cheese",
@@ -68,8 +71,9 @@ public extension Meal {
             isGlutenFree: true,
             isPopular: false,
             isSpicy: false,
-            allergens: [])
-        
+            allergens: []
+        )
+
         static let tofu = Meal(
             name: "Tofu",
             description: "Tofu",
@@ -82,8 +86,9 @@ public extension Meal {
             isGlutenFree: true,
             isPopular: false,
             isSpicy: false,
-            allergens: [])
-        
+            allergens: []
+        )
+
         static let salad = Meal(
             name: "Salad",
             description: "Tomato, Cucumber, Lettuce",
@@ -96,6 +101,7 @@ public extension Meal {
             isGlutenFree: true,
             isPopular: false,
             isSpicy: false,
-            allergens: [])
+            allergens: []
+        )
     }
 }
