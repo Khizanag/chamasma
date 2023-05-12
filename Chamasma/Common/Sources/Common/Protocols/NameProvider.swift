@@ -13,6 +13,6 @@ public protocol NameProvider {
 // MARK: - Extension
 public extension NameProvider {
     var name: String {
-        String(reflecting: self)
+        String(reflecting: self).capitalized
     }
 }
