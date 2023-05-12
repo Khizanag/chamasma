@@ -5,10 +5,10 @@
 //  Created by Giga Khizanishvili on 17.04.23.
 //
 
+import Common
 import SwiftUI
 
-// TODO: change `string` after common module creation
-public enum Tag: String {
+public enum Tag: NameProvider {
     case popular
 }
 
