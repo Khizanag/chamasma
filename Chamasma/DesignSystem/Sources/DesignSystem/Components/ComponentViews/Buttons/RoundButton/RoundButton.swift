@@ -11,10 +11,6 @@ import SwiftUI
 struct RoundButton: View {
     let model: RoundButtonModel
 
-    init(model: RoundButtonModel) {
-        self.model = model
-    }
-
     var body: some View {
         Button {
             print("Round Button clicked") // TODO: discuss and add action into model
@@ -33,13 +29,13 @@ private extension RoundButtonImage {
     var name: Image {
         switch self {
         case .plus:
-            return Image(systemName: "plus")
+            return DesignSystem.Image.plus
         case .search:
-            return Image(systemName: "magnifyingglass")
+            return DesignSystem.Image.magnifyingGlass
         case .backArrow:
-            return Image(systemName: "arrow.backward")
+            return DesignSystem.Image.arrowBackward
         case .close:
-            return Image(systemName: "xmark")
+            return DesignSystem.Image.xMark
         }
     }
 }
