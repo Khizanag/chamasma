@@ -1,5 +1,7 @@
+// swiftlint:disable sorted_imports
 import XCTest
 @testable import Presentation
+// swiftlint:enable sorted_imports
 
 final class PresentationTests: XCTestCase {
     func testExample() throws {

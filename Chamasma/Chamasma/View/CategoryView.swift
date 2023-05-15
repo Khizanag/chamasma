@@ -6,12 +6,14 @@
 //
 
 import DesignSystem
+import Domain
+import Presentation
 import SwiftUI
 
 public struct CategoryView: View {
     // MARK: - Properties
     public let title: String
-    // TODO: pass [CategoryItemModel] when MealCell will be refactored to take model not properties
+    public let meals: [Meal]
 
     // MARK: - Body
     public var body: some View {
@@ -39,15 +41,8 @@ public struct CategoryView: View {
 
     private var categoryItemList: some View {
         VStack(alignment: .leading) {
-            ForEach(1...10, id: \.self) { _ in // TODO: will iterate given array
-                MealCell(
-                    name: "Cheesburger",
-                    description: "Cheesburger, Regular Bun, ketchup, pickle",
-                    price: 123.45,
-                    rating: 0.78,
-                    image: DesignSystem.Image.burger,
-                    isPopular: true
-                )
+            ForEach(meals) { meal in
+                MealCell(meal: meal)
             }
         }
     }
@@ -58,7 +53,10 @@ struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.gray
-            CategoryView(title: "Burger")
+            CategoryView(
+                title: "Burger",
+                meals: Meal.Example.meals
+            )
                 .padding()
         }
         .ignoresSafeArea()

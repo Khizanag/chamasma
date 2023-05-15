@@ -5,38 +5,22 @@
 //  Created by Giga Khizanishvili on 17.04.23.
 //
 
+import Domain
 import SwiftUI
 
 public struct MealCell: View {
-    // MARK: - Properties
-    public let name: String
-    public let description: String
-    public let price: Double
-    public let rating: Double
-    public let image: Image
-    public let isPopular: Bool
+    // MARK: - Public Properties
+    public let meal: Meal
 
     // MARK: - Init
-    public init(
-        name: String,
-        description: String,
-        price: Double,
-        rating: Double,
-        image: Image,
-        isPopular: Bool
-    ) {
-        self.name = name
-        self.description = description
-        self.price = price
-        self.rating = rating
-        self.image = image
-        self.isPopular = isPopular
+    public init(meal: Meal) {
+        self.meal = meal
     }
 
     // MARK: - Body
     public var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            if isPopular {
+            if meal.isPopular {
                 TagView(for: .popular)
             }
 
@@ -49,7 +33,7 @@ public struct MealCell: View {
 
                         priceComponent
 
-                        RatingView(rating)
+                        RatingView(meal.rating)
                     }
 
                     Spacer(minLength: 0)
@@ -64,23 +48,23 @@ public struct MealCell: View {
 
     // MARK: - Components
     private var titleComponent: some View {
-        Text(name.uppercased())
+        Text(meal.name.uppercased())
             .bold()
             .lineLimit(1)
     }
 
     private var descriptionComponent: some View {
-        Text(description)
+        Text(meal.description)
             .lineLimit(2)
             .font(.footnote)
     }
 
     private var priceComponent: some View {
-        Text("\(price) gel")
+        Text("\(meal.price) gel")
     }
 
     private var imageComponent: some View {
-        image
+        meal.image
             .resizable()
             .frame(width: 170, height: 100)
             .background(Color.red)
@@ -92,12 +76,20 @@ public struct MealCell: View {
 struct MealCell_Previews: PreviewProvider {
     static var previews: some View {
         MealCell(
-            name: "ROYAL DOUBLE",
-            description: "King chicken, big king, onion tings, big fries, mini auce, coca-cola 1L.",
-            price: 123.45,
-            rating: 0.78,
-            image: DesignSystem.Image.burger,
-            isPopular: true
+            meal: .init(
+                name: "ROYAL DOUBLE",
+                description: "King chicken, big king, onion tings, big fries, mini auce, coca-cola 1L.",
+                rating: 0.78,
+                price: 123.45,
+                image: DesignSystem.Image.burger,
+                ingredients: [],
+                isVegetarian: false,
+                isVegan: false,
+                isGlutenFree: false,
+                isPopular: true,
+                isSpicy: true,
+                allergens: []
+            )
         )
         .padding()
     }
