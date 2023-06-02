@@ -20,7 +20,7 @@ public struct TagView: View {
     public var body: some View {
         Label(
             title: {
-                Text(tag.rawValue.uppercased())
+                Text(tag.name.uppercased())
             },
             icon: {
                 tag.icon
