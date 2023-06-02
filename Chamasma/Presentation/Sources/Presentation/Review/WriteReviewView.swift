@@ -8,11 +8,13 @@
 import DesignSystem
 import SwiftUI
 
-struct WriteReviewView: View {
+public struct WriteReviewView: View {
     @State private var rating = ""
     @State private var review = ""
 
-    var body: some View {
+    public init() { }
+
+    public var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             TitleLabel("Write a review")
 
@@ -25,14 +27,17 @@ struct WriteReviewView: View {
 
             TextField("Share your experience...", text: $review, axis: .vertical)
                 .multilineTextAlignment(.leading)
-                .lineLimit(nil)
+                .lineLimit(4...10)
                 .padding()
-                .frame(height: 220)
                 .background(Color(hex: "F7F8FA"))
 
             Spacer()
 
-            
+            Button("Submit", role: .destructive) {
+                print("Submit")
+            }
+            .makePrimary()
+            .padding(.bottom)
         }
         .padding([.horizontal, .top], 16)
     }
