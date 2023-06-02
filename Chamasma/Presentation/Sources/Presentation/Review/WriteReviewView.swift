@@ -31,11 +31,14 @@ struct WriteReviewView: View {
                 .background(Color(hex: "F7F8FA"))
 
             Spacer()
+
+            
         }
         .padding([.horizontal, .top], 16)
     }
 }
 
+// MARK: - Preview
 struct WriteReviewView_Previews: PreviewProvider {
     static var previews: some View {
         WriteReviewView()
