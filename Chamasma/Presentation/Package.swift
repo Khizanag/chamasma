@@ -15,6 +15,7 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(path: "../DesignSystem"),
         .package(path: "../Domain"),
         .package(path: "../DesignSystem"),
     ],
@@ -22,6 +23,7 @@ let package = Package(
         .target(
             name: "Presentation",
             dependencies: [
+                "DesignSystem",
                 "Domain",
                 "DesignSystem",
             ]
