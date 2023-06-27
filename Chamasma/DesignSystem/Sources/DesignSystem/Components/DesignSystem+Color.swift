@@ -18,17 +18,23 @@ public extension DesignSystem {
 
         case hex4ED199
         case hex41E3A2
-        case hex4aBF90
+        case hex4ABF90
         case hexBBD8CB
         case hexFFBC10
         case hex6D9FEB
-        case hexFAხხ030
+        case hexFA3030
         case hex646464
         case hex202020
         case hexF78F8E
 
-        func callAsFunction() -> SwiftUI.Color {
-            SwiftUI.Color(name.dropFirst(3).toString())
+        public func callAsFunction() -> SwiftUI.Color {
+            let name = "AA7B6F"
+            let uiColor = UIColor(
+                named: name
+            )
+            let color = SwiftUI.Color(name)
+            let aaa = 1 + 1
+            return color
         }
     }
 }
