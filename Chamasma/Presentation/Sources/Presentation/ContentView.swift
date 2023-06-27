@@ -10,28 +10,35 @@ import CoreData
 import DesignSystem
 import SwiftUI
 
-struct ContentView: View {
+public struct ContentView: View {
     @State private var isScannerPresented = false
 
-    var body: some View {
+    public init() { }
+
+    public var body: some View {
         NavigationStack {
-            Color.green
-                .ignoresSafeArea(edges: .bottom )
-                .toolbar {
-                    Button {
-                        isScannerPresented = true
-                    } label: {
-                        Label("Scan", systemImage: "qrcode.viewfinder")
-                    }
-                }
-                .sheet(isPresented: $isScannerPresented) {
-                    CodeScannerView(
-                        codeTypes: [.qr],
-                        simulatedData: "Giga Kh",
-                        completion: handlerScanResult
-                    )
-                }
+            // qr
+            WriteReviewView()
         }
+    }
+
+    private var qr: some View {
+        Color.green
+            .ignoresSafeArea(edges: .bottom )
+            .toolbar {
+                Button {
+                    isScannerPresented = true
+                } label: {
+                    Label("Scan", systemImage: "qrcode.viewfinder")
+                }
+            }
+            .sheet(isPresented: $isScannerPresented) {
+                CodeScannerView(
+                    codeTypes: [.qr],
+                    simulatedData: "Giga Kh",
+                    completion: handlerScanResult
+                )
+            }
     }
 
     // MARK: - Methods
