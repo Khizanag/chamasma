@@ -22,7 +22,6 @@ struct VotingView: View {
         self._likes = .init(initialValue: state == .liked ? (likes - 1) : likes)
         self._dislikes = .init(initialValue: state == .disliked ? (dislikes - 1) : dislikes)
         self._state = .init(initialValue: state)
-
         self._isLikeButtonActive = .init(initialValue: state == .liked)
         self._isDislikeButtonActive = .init(initialValue: state == .disliked)
     }
@@ -62,7 +61,6 @@ struct VotingView: View {
             withAnimation {
                 isLikeButtonActive = false
             }
-
         }
     }
 }

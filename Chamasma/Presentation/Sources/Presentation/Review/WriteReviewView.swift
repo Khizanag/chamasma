@@ -14,14 +14,16 @@ public struct WriteReviewView: View {
 
     public init() { }
 
+    // MARK: - Body
     public var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            TitleLabel("Write a review")
+
 
             Text("Rating")
             TextField("Choose rating", text: $rating)
                 .padding()
                 .background(Color(hex: "F7F8FA"))
+                .cornerRadius(10)
 
             Text("Write a review")
 
@@ -30,6 +32,7 @@ public struct WriteReviewView: View {
                 .lineLimit(4...10)
                 .padding()
                 .background(Color(hex: "F7F8FA"))
+                .cornerRadius(10)
 
             Spacer()
 
@@ -40,12 +43,15 @@ public struct WriteReviewView: View {
             .padding(.bottom)
         }
         .padding([.horizontal, .top], 16)
+        .navigationTitle("Write a review")
     }
 }
 
 // MARK: - Preview
 struct WriteReviewView_Previews: PreviewProvider {
     static var previews: some View {
-        WriteReviewView()
+        NavigationStack {
+            WriteReviewView()
+        }
     }
 }
