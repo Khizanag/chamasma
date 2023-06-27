@@ -9,7 +9,7 @@ import DesignSystem
 import SwiftUI
 
 public struct WriteReviewView: View {
-    @State private var rating = ""
+    @State private var rating = 5
     @State private var review = ""
 
     public init() { }
@@ -18,21 +18,29 @@ public struct WriteReviewView: View {
     public var body: some View {
         VStack(alignment: .leading, spacing: 16) {
 
+            VStack(alignment: .leading)  {
+                Text("Rating")
+                    .font(.title2)
 
-            Text("Rating")
-            TextField("Choose rating", text: $rating)
-                .padding()
-                .background(Color(hex: "F7F8FA"))
-                .cornerRadius(10)
+                Picker("Choose Rating", selection: $rating) {
+                    ForEach(1...5, id: \.self) { numStars in
+                        makeStarLine(numStars)
+                    }
+                }
+                .pickerStyle(.navigationLink)
+            }
 
-            Text("Write a review")
+            VStack(alignment: .leading) {
+                Text("Write a review")
+                    .font(.title2)
 
-            TextField("Share your experience...", text: $review, axis: .vertical)
-                .multilineTextAlignment(.leading)
-                .lineLimit(4...10)
-                .padding()
-                .background(Color(hex: "F7F8FA"))
-                .cornerRadius(10)
+                TextField("Share your experience...", text: $review, axis: .vertical)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(4...10)
+                    .padding()
+                    .background(Color(hex: "F7F8FA"))
+                    .cornerRadius(10)
+            }
 
             Spacer()
 
@@ -44,6 +52,18 @@ public struct WriteReviewView: View {
         }
         .padding([.horizontal, .top], 16)
         .navigationTitle("Write a review")
+    }
+
+    private func makeStarLine(_ count: Int) -> some View {
+        HStack {
+            ForEach(1...count, id: \.self) { _ in
+                Image(systemName: "star.fill")
+            }
+            .foregroundColor(.yellow)
+
+            Spacer()
+        }
+        .tag(count)
     }
 }
 
