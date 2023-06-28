@@ -5,6 +5,7 @@
 //  Created by Giga Khizanishvili on 14.04.23.
 //
 
+import Presentation
 import SwiftUI
 
 @main

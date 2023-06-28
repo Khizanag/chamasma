@@ -15,7 +15,6 @@
 		FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */; };
 		FBD9481229E89B3300D0B96D /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481129E89B3300D0B96D /* PersistenceController.swift */; };
 		FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481329E89B3300D0B96D /* Chamasma.xcdatamodeld */; };
-		FBD9481729E89B3300D0B96D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9481629E89B3300D0B96D /* ContentView.swift */; };
 		FBD9481929E89B3500D0B96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD9481829E89B3500D0B96D /* Assets.xcassets */; };
 		FBD9481D29E89B3500D0B96D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD9481C29E89B3500D0B96D /* Preview Assets.xcassets */; };
 		FBD9482729E89B3500D0B96D /* ChamasmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9482629E89B3500D0B96D /* ChamasmaTests.swift */; };
@@ -54,7 +53,6 @@
 		FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamasmaApp.swift; sourceTree = "<group>"; };
 		FBD9481129E89B3300D0B96D /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		FBD9481429E89B3300D0B96D /* Chamasma.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chamasma.xcdatamodel; sourceTree = "<group>"; };
-		FBD9481629E89B3300D0B96D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBD9481829E89B3500D0B96D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD9481A29E89B3500D0B96D /* Chamasma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chamasma.entitlements; sourceTree = "<group>"; };
 		FBD9481C29E89B3500D0B96D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 				B77940CC29F46B67002C770C /* View */,
 				FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */,
 				FBD9481129E89B3300D0B96D /* PersistenceController.swift */,
-				FBD9481629E89B3300D0B96D /* ContentView.swift */,
 				FBD9481829E89B3500D0B96D /* Assets.xcassets */,
 				FBD9481A29E89B3500D0B96D /* Chamasma.entitlements */,
 				FBD9481329E89B3300D0B96D /* Chamasma.xcdatamodeld */,
@@ -354,7 +351,6 @@
 			files = (
 				FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */,
 				FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */,
-				FBD9481729E89B3300D0B96D /* ContentView.swift in Sources */,
 				FBD9481229E89B3300D0B96D /* PersistenceController.swift in Sources */,
 				B77940CE29F46BD8002C770C /* CategoryView.swift in Sources */,
 			);
