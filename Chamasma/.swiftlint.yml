@@ -279,7 +279,7 @@ opt_in_rules:
     - first_where
     - flatmap_over_map_reduce
     - force_unwrapping
-    - function_default_parameter_at_end
+    # - function_default_parameter_at_end
     - ibinspectable_in_extension
     - identical_operands
     - implicit_return
@@ -458,8 +458,8 @@ flatmap_over_map_reduce:
     severity: error
 force_unwrapping:
     severity: error
-function_default_parameter_at_end:
-    severity: error
+# function_default_parameter_at_end:
+    # severity: error
 ibinspectable_in_extension:
     severity: error
 identical_operands:

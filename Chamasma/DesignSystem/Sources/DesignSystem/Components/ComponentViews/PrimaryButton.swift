@@ -14,7 +14,7 @@ public struct PrimaryButton: View {
     let action: () -> Void
 
     // MARK: - Init
-    public init(icon: Image?, title: String, action: @escaping () -> Void) {
+    public init(icon: Image? = nil, title: String, action: @escaping () -> Void) {
         self.icon = icon
         self.title = title
         self.action = action

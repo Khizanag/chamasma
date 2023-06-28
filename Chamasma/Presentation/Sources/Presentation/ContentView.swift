@@ -11,15 +11,20 @@ import DesignSystem
 import SwiftUI
 
 public struct ContentView: View {
+    // MARK: - Properties
     @State private var isScannerPresented = false
 
+    // MARK: - Init
     public init() { }
 
+    // MARK: - Body
     public var body: some View {
         NavigationStack {
             // qr
-            WriteReviewView()
+//            WriteReviewView()
+            VotingView(likes: 12, dislikes: 7, state: .disliked)
         }
+
     }
 
     private var qr: some View {
@@ -71,6 +76,7 @@ private extension ContentView {
     }
 }
 
+// MARK: - Previews
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

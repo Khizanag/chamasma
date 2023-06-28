@@ -12,7 +12,11 @@ public struct WriteReviewView: View {
     @State private var rating = 5
     @State private var review = ""
 
-    public init() { }
+    @ObservedObject private var viewModel: WriteReviewViewModel
+
+    public init(viewModel: WriteReviewViewModel) {
+        self.viewModel = viewModel
+    }
 
     // MARK: - Body
     public var body: some View {
@@ -44,10 +48,12 @@ public struct WriteReviewView: View {
 
             Spacer()
 
-            Button("Submit", role: .destructive) {
-                print("Submit")
-            }
-            .makePrimary()
+            PrimaryButton(
+                title: "Submit",
+                action: {
+                    // TODO: Handle action
+                }
+            )
             .padding(.bottom)
         }
         .padding([.horizontal, .top], 16)
@@ -59,7 +65,7 @@ public struct WriteReviewView: View {
             ForEach(1...count, id: \.self) { _ in
                 Image(systemName: "star.fill")
             }
-            .foregroundColor(.yellow)
+            .foregroundColor(.yellow.opacity(0.8))
 
             Spacer()
         }
@@ -71,7 +77,7 @@ public struct WriteReviewView: View {
 struct WriteReviewView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            WriteReviewView()
+            WriteReviewView(viewModel: .init())
         }
     }
 }

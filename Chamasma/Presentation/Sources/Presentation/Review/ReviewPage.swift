@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ReviewPage: View {
+    @State var selectedPage = 0
     var body: some View {
-        headerView
 
-        titleView
+        Picker("Options", selection: $selectedPage) {
+            Text("Description")
+                .padding()
+                .tag(0)
 
-        reviewsView
+            Text("Reviews")
+                .padding()
+                .tag(1)
+        }
 
-        submitButton
+        .pickerStyle(SegmentedPickerStyle())
+        .foregroundStyle(Color.green)
+        .tint(.yellow)
+        .accentColor(.brown)
+        .padding(-4)
+        .background(Color.red)
+
+//        headerView
+//
+//        titleView
+//
+//        reviewsView
+//
+//        submitButton
     }
 
     // MARK: - SubComponents
