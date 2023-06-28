@@ -30,13 +30,11 @@ public extension DesignSystem {
         // MARK: - Additional colors
         case hex9EA2AC
 
-        // FIXME: Update
         public func callAsFunction() -> SwiftUI.Color {
-            let name = "AA7B6F"
-            let uiColor = UIColor(named: name)
-            let color = SwiftUI.Color(name)
-            let aaa = 1 + 1
-            return color
+            SwiftUI.Color(
+                name.dropFirst(3).toString(), // removing "hex"
+                bundle: .module
+            )
         }
     }
 }
