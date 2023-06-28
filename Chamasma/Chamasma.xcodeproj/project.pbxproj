@@ -96,11 +96,11 @@
 		FBCA8FDE29EAE53E002B6972 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				FB10BF3729EEE21200F682B7 /* Domain */,
-				FB10BF3629EEDFDE00F682B7 /* Presentation */,
 				FB2C6B0F29EDA79300221CEF /* Common */,
-				FB2C6B1229EDB2AF00221CEF /* Networking */,
 				FBCA8FDF29EAE53E002B6972 /* DesignSystem */,
+				FB10BF3729EEE21200F682B7 /* Domain */,
+				FB2C6B1229EDB2AF00221CEF /* Networking */,
+				FB10BF3629EEDFDE00F682B7 /* Presentation */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
