@@ -5,7 +5,6 @@
 //  Created by Giga Khizanishvili on 14.04.23.
 //
 
-import CodeScanner
 import CoreData
 import DesignSystem
 import SwiftUI
@@ -21,7 +20,7 @@ public struct ContentView: View {
     public var body: some View {
         NavigationStack {
             // qr
-//            WriteReviewView()
+            // WriteReviewView()
             VotingView(likes: 12, dislikes: 7, state: .disliked)
         }
     }
@@ -37,35 +36,35 @@ public struct ContentView: View {
                 }
             }
             .sheet(isPresented: $isScannerPresented) {
-                CodeScannerView(
-                    codeTypes: [.qr],
-                    simulatedData: "Giga Kh",
-                    completion: handlerScanResult
-                )
+//                CodeScannerView(
+//                    codeTypes: [.qr],
+//                    simulatedData: "Giga Kh",
+//                    completion: handlerScanResult
+//                )
             }
     }
 
     // MARK: - Methods
-    private func handlerScanResult(_ result: Result<ScanResult, ScanError>) {
-        switch result {
-        case .success(let scanResult):
-            let content = scanResult.string
-            print("Content of the code is \(content)")
-        case .failure(let error):
-            switch error {
-            case .badInput:
-                print("Bad input for QR")
-            case .badOutput:
-                print("Bad output for QR")
-            case .initError(let error):
-                print("\(error.localizedDescription)")
-            case .permissionDenied:
-                print("Permission Denied")
-            }
-        }
-
-        isScannerPresented = false
-    }
+//    private func handlerScanResult(_ result: Result<ScanResult, ScanError>) {
+//        switch result {
+//        case .success(let scanResult):
+//            let content = scanResult.string
+//            print("Content of the code is \(content)")
+//        case .failure(let error):
+//            switch error {
+//            case .badInput:
+//                print("Bad input for QR")
+//            case .badOutput:
+//                print("Bad output for QR")
+//            case .initError(let error):
+//                print("\(error.localizedDescription)")
+//            case .permissionDenied:
+//                print("Permission Denied")
+//            }
+//        }
+//
+//        isScannerPresented = false
+//    }
 }
 
 // MARK: - Constant
