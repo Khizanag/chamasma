@@ -23,22 +23,19 @@ struct VotingItemView: View {
                 }
             },
             label: {
-                Label(
-                    title: {
-                        Text(
-                            (isActive ? (count + 1) : count).stringValue
+                HStack(spacing: 4) {
+                    Image(systemName: style.imageSystemName)
+                        .foregroundColor(
+                            (isActive) ? style.color : Style.neutralStateColor
                         )
-                        .foregroundStyle(DesignSystem.Color.hex646464())
-                    },
-                    icon: {
-                        Image(systemName: style.imageSystemName)
-                            .foregroundColor(
-                                (isActive) ? style.color : Style.neutralStateColor
-                            )
-                            .font(.system(size: 24))
-                            .scaleEffect(isActive ? 1.1 : 1)
-                    }
-                )
+                        .scaleEffect(isActive ? 1.05 : 1)
+
+                    Text(
+                        (isActive ? (count + 1) : count).stringValue
+                    )
+                    .font(.subheadline)
+                    .foregroundStyle(DesignSystem.Color.hex646464())
+                }
             }
         )
     }

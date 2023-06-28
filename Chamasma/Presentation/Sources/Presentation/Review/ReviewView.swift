@@ -8,20 +8,25 @@
 import DesignSystem
 import SwiftUI
 
-public struct ReviewView: View {
+struct ReviewView: View {
+    // MARK: - Properties
+    let review: Review
+
     // MARK: - Body
-    public var body: some View {
-        VStack(spacing: 12) {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Image(systemName: "person.circle.fill")
                     .foregroundColor(.gray)
                     .font(.largeTitle)
 
                 VStack(alignment: .leading) {
-                    Text("Giga Khizanishvili")
+                    Text(review.author.fullName)
+                        .foregroundColor(DesignSystem.Color.hex4ED199())
+                        .font(.headline)
 
-                    Text("Oct 17, 2022")
-                        .font(.footnote)
+                    Text(review.date.description)
+                        .font(.caption)
                         .foregroundStyle(
                             DesignSystem.Color.hex646464()
                                 .opacity(0.8)
@@ -33,20 +38,18 @@ public struct ReviewView: View {
                 RatingView(0.89)
             }
 
-            Text(
-                """
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                """
-            )
+            Text(review.description)
                 .font(.footnote)
                 .foregroundStyle(DesignSystem.Color.hex646464())
 
             HStack {
                 Spacer()
 
-                VotingView(likes: 215, dislikes: 24, state: .disliked)
+                VotingView(
+                    likes: review.numLikes,
+                    dislikes: review.numDislikes,
+                    state: .disliked // FIXME: set appropriate state
+                )
             }
 
             Divider()
@@ -58,6 +61,6 @@ public struct ReviewView: View {
 // MARK: - Preview
 struct ReviewView_Previews: PreviewProvider {
     static var previews: some View {
-        ReviewView()
+        ReviewView(review: .example)
     }
 }

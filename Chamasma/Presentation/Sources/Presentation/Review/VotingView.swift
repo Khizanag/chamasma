@@ -12,7 +12,6 @@ struct VotingView: View {
     @State private var likes: Int
     @State private var dislikes: Int
     @State private var state: LikeState
-
     @State private var isLikeButtonActive: Bool
     @State private var isDislikeButtonActive: Bool
 
@@ -27,7 +26,7 @@ struct VotingView: View {
 
     // MARK: - Body
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(spacing: 16) {
             likeButton
 
             dislikeButton

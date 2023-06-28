@@ -17,6 +17,7 @@ let package = Package(
     dependencies: [
         .package(path: "../DesignSystem"),
         .package(path: "../Domain"),
+        .package(url: "https://github.com/lukaskubanek/LoremSwiftum.git", from: "2.2.1"),
     ],
     targets: [
         .target(
@@ -24,6 +25,7 @@ let package = Package(
             dependencies: [
                 "DesignSystem",
                 "Domain",
+                "LoremSwiftum",
             ]
         ),
         .testTarget(
