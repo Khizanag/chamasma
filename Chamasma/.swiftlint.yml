@@ -245,7 +245,7 @@ opt_in_rules:
     - closure_spacing
     - collection_alignment
     - comma_inheritance
-    - conditional_returns_on_newline
+    # - conditional_returns_on_newline
     - contains_over_filter_count
     - contains_over_filter_is_empty
     - contains_over_first_not_nil
@@ -390,8 +390,8 @@ collection_alignment:
     severity: error
 comma_inheritance:
     severity: error
-conditional_returns_on_newline:
-    severity: error
+# conditional_returns_on_newline:
+    # severity: error
 contains_over_filter_count:
     severity: error
 contains_over_filter_is_empty:

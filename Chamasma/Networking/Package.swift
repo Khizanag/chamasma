@@ -11,7 +11,8 @@ let package = Package(
     products: [
         .library(
             name: "Networking",
-            targets: ["Networking"]),
+            targets: ["Networking"]
+        ),
     ],
     dependencies: [
         .package(path: "../Common"),
@@ -21,9 +22,11 @@ let package = Package(
             name: "Networking",
             dependencies: [
                 "Common",
-            ]),
+            ]
+        ),
         .testTarget(
             name: "NetworkingTests",
-            dependencies: ["Networking"]),
+            dependencies: ["Networking"]
+        ),
     ]
 )

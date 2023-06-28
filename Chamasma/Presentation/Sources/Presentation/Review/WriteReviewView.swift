@@ -1,6 +1,6 @@
 //
 //  WriteReviewView.swift
-//  
+//
 //
 //  Created by Giga Khizanishvili on 13.05.23.
 //
@@ -21,8 +21,7 @@ public struct WriteReviewView: View {
     // MARK: - Body
     public var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-
-            VStack(alignment: .leading)  {
+            VStack(alignment: .leading) {
                 Text("Rating")
                     .font(.title2)
 
@@ -48,12 +47,9 @@ public struct WriteReviewView: View {
 
             Spacer()
 
-            PrimaryButton(
-                title: "Submit",
-                action: {
-                    // TODO: Handle action
-                }
-            )
+            PrimaryButton(title: "Submit") {
+                // TODO: Handle action
+            }
             .padding(.bottom)
         }
         .padding([.horizontal, .top], 16)

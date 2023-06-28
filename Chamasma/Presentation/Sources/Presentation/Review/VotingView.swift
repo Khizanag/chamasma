@@ -1,6 +1,6 @@
 //
 //  VotingView.swift
-//  
+//
 //
 //  Created by Giga Khizanishvili on 12.05.23.
 //
@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct VotingView: View {
-
     // MARK: - Properties
     @State private var likes: Int
     @State private var dislikes: Int

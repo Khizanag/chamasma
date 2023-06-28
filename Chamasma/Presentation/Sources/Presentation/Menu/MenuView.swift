@@ -11,7 +11,7 @@ import SwiftUI
 
 struct MenuView: View {
     let categories: [MenuCategory]
-    
+
     // MARK: - Body
     var body: some View {
         ScrollView {
@@ -22,7 +22,7 @@ struct MenuView: View {
                 ForEach(categories) { category in
                     MenuCategoryItem(image: category.image, title: category.name)
                 }
-            } 
+            }
             .padding()
         }
     }

@@ -1,6 +1,6 @@
 //
 //  ReviewPage.swift
-//  
+//
 //
 //  Created by Giga Khizanishvili on 12.05.23.
 //
@@ -10,7 +10,6 @@ import SwiftUI
 struct ReviewPage: View {
     @State var selectedPage = 0
     var body: some View {
-
         Picker("Options", selection: $selectedPage) {
             Text("Description")
                 .padding()

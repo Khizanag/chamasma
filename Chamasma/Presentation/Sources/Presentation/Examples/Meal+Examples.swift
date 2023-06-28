@@ -11,7 +11,6 @@ import Domain
 // MARK: - Example
 public extension Meal {
     enum Example {
-
         public static let meals = [cheesburger, chiliCheesburger, hamburger, vegetarianBurger, tofu, salad]
 
         static let cheesburger = Meal(
