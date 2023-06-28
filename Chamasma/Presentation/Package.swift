@@ -17,7 +17,6 @@ let package = Package(
     dependencies: [
         .package(path: "../DesignSystem"),
         .package(path: "../Domain"),
-        .package(path: "../DesignSystem"),
     ],
     targets: [
         .target(
@@ -25,7 +24,6 @@ let package = Package(
             dependencies: [
                 "DesignSystem",
                 "Domain",
-                "DesignSystem",
             ]
         ),
         .testTarget(

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B77940CE29F46BD8002C770C /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77940CD29F46BD8002C770C /* CategoryView.swift */; };
 		FB10BF3929EEE56700F682B7 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = FB10BF3829EEE56700F682B7 /* Domain */; };
 		FB10BF3B29EEE57200F682B7 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = FB10BF3A29EEE57200F682B7 /* Presentation */; };
 		FB2C6B1129EDA84500221CEF /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = FB2C6B1029EDA84500221CEF /* Common */; };
@@ -43,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B77940CD29F46BD8002C770C /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		FB10BF3629EEDFDE00F682B7 /* Presentation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Presentation; sourceTree = "<group>"; };
 		FB10BF3729EEE21200F682B7 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		FB2C6B0F29EDA79300221CEF /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
@@ -95,14 +93,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B77940CC29F46B67002C770C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B77940CD29F46BD8002C770C /* CategoryView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		FBCA8FDE29EAE53E002B6972 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,13 +108,12 @@
 		FBD9480329E89B3300D0B96D = {
 			isa = PBXGroup;
 			children = (
-				FBCA8FDE29EAE53E002B6972 /* Packages */,
 				FBD9485729E8B64D00D0B96D /* .swiftlint.yml */,
 				FBD9480E29E89B3300D0B96D /* Chamasma */,
 				FBD9482529E89B3500D0B96D /* ChamasmaTests */,
 				FBD9482F29E89B3500D0B96D /* ChamasmaUITests */,
+				FBCA8FDE29EAE53E002B6972 /* Packages */,
 				FBD9480D29E89B3300D0B96D /* Products */,
-				FBD9485129E8A15F00D0B96D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,7 +130,6 @@
 		FBD9480E29E89B3300D0B96D /* Chamasma */ = {
 			isa = PBXGroup;
 			children = (
-				B77940CC29F46B67002C770C /* View */,
 				FBD9480F29E89B3300D0B96D /* ChamasmaApp.swift */,
 				FBD9481129E89B3300D0B96D /* PersistenceController.swift */,
 				FBD9481829E89B3500D0B96D /* Assets.xcassets */,
@@ -175,13 +163,6 @@
 				FBD9483229E89B3500D0B96D /* ChamasmaUITestsLaunchTests.swift */,
 			);
 			path = ChamasmaUITests;
-			sourceTree = "<group>";
-		};
-		FBD9485129E8A15F00D0B96D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --fix --quiet\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -352,7 +333,6 @@
 				FBD9481529E89B3300D0B96D /* Chamasma.xcdatamodeld in Sources */,
 				FBD9481029E89B3300D0B96D /* ChamasmaApp.swift in Sources */,
 				FBD9481229E89B3300D0B96D /* PersistenceController.swift in Sources */,
-				B77940CE29F46BD8002C770C /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

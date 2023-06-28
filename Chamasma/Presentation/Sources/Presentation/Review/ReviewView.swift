@@ -5,11 +5,10 @@
 //  Created by Giga Khizanishvili on 12.05.23.
 //
 
-import SwiftUI
 import DesignSystem
+import SwiftUI
 
 public struct ReviewView: View {
-
     // MARK: - Body
     public var body: some View {
         VStack(spacing: 12) {
@@ -24,7 +23,7 @@ public struct ReviewView: View {
                     Text("Oct 17, 2022")
                         .font(.footnote)
                         .foregroundStyle(
-                            Color(hex: "646464")!
+                            DesignSystem.Color.hex646464()
                                 .opacity(0.8)
                         )
                 }
@@ -34,9 +33,15 @@ public struct ReviewView: View {
                 RatingView(0.89)
             }
 
-            Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")
+            Text(
+                """
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                """
+            )
                 .font(.footnote)
-                .foregroundStyle(Color(hex: "646464")!)
+                .foregroundStyle(DesignSystem.Color.hex646464())
 
             HStack {
                 Spacer()

@@ -7,7 +7,6 @@
 
 import DesignSystem
 import Domain
-import Presentation
 import SwiftUI
 
 public struct CategoryView: View {

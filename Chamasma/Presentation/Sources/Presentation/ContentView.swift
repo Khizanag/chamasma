@@ -24,7 +24,6 @@ public struct ContentView: View {
 //            WriteReviewView()
             VotingView(likes: 12, dislikes: 7, state: .disliked)
         }
-
     }
 
     private var qr: some View {

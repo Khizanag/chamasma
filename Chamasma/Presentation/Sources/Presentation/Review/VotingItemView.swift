@@ -5,6 +5,7 @@
 //  Created by Giga Khizanishvili on 28.06.23.
 //
 
+import DesignSystem
 import SwiftUI
 
 struct VotingItemView: View {
@@ -21,13 +22,13 @@ struct VotingItemView: View {
                     isActive.toggle()
                 }
             },
-            label:  {
+            label: {
                 Label(
                     title: {
                         Text(
                             (isActive ? (count + 1) : count).stringValue
                         )
-                        .foregroundStyle(Color(hex: "646464")!)
+                        .foregroundStyle(DesignSystem.Color.hex646464())
                     },
                     icon: {
                         Image(systemName: style.imageSystemName)
@@ -52,9 +53,9 @@ extension VotingItemView {
         var color: Color {
             switch self {
             case .like:
-                return .init(hex: "6D9FEB")!
+                return DesignSystem.Color.hex6D9FEB()
             case .dislike:
-                return .init(hex: "F78F8E")!
+                return DesignSystem.Color.hexF78F8E()
             }
         }
 
@@ -68,7 +69,7 @@ extension VotingItemView {
         }
 
         static var neutralStateColor: Color {
-            .init(hex: "9EA2AC")!.opacity(0.3)
+            DesignSystem.Color.hex9EA2AC().opacity(0.3)
         }
     }
 }
