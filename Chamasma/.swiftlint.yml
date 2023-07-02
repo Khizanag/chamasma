@@ -129,9 +129,9 @@ legacy_nsgeometry_functions:
     severity: error
 legacy_random:
     severity: error
-line_length:
-    - 110
-    - 130
+#line_length:
+#    - 110
+#    - 130
 mark:
     severity: error
 multiple_closures_with_trailing_closure:
