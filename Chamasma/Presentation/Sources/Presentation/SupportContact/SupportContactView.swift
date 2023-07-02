@@ -33,6 +33,7 @@ struct SupportContactView: View {
         .init(
             id: UUID().uuidString,
             user: senderUser,
+            status: .sent,
             createdAt: .now,
             text: Lorem.sentence,
             attachments: [],
@@ -42,6 +43,7 @@ struct SupportContactView: View {
         .init(
             id: UUID().uuidString,
             user: supportUser,
+            status: .sent,
             createdAt: .now,
             text: Lorem.sentence,
             attachments: [],
