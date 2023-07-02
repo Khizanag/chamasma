@@ -5,8 +5,10 @@
 //  Created by Giga Khizanishvili on 14.04.23.
 //
 
+import Chat
 import CoreData
 import DesignSystem
+import LoremSwiftum
 import SwiftUI
 
 public struct ContentView: View {
@@ -19,9 +21,7 @@ public struct ContentView: View {
     // MARK: - Body
     public var body: some View {
         NavigationStack {
-            // qr
-            // WriteReviewView()
-            VotingView(likes: 12, dislikes: 7, state: .disliked)
+            SupportContactView()
         }
     }
 

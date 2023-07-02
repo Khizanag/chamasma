@@ -1,12 +1,57 @@
 {
   "pins" : [
     {
+      "identity" : "chat",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/chat",
+      "state" : {
+        "revision" : "60f877cda7640c97f26881c2d1fc2930b12fb0f5",
+        "version" : "0.0.4"
+      }
+    },
+    {
       "identity" : "codescanner",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/twostraws/CodeScanner",
       "state" : {
         "revision" : "4b2f9c57d03bfe94e6b45572e0c908c1433c32b2",
         "version" : "2.3.2"
+      }
+    },
+    {
+      "identity" : "floatingbutton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/FloatingButton",
+      "state" : {
+        "revision" : "0fcbf6c1eed0450382fb8b0efd07f3d82a35da6d",
+        "version" : "1.1.5"
+      }
+    },
+    {
+      "identity" : "loremswiftum",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lukaskubanek/LoremSwiftum.git",
+      "state" : {
+        "revision" : "8942e732e50458cde5dccf9996afa16f29372853",
+        "version" : "2.2.2"
+      }
+    },
+    {
+      "identity" : "mediapicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/MediaPicker.git",
+      "state" : {
+        "revision" : "2b81eccb5e30367a116f86c2a4ffc18ee0bbd72f",
+        "version" : "1.2.3"
+      }
+    },
+    {
+      "identity" : "swiftui-introspect",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/siteline/SwiftUI-Introspect.git",
+      "state" : {
+        "revision" : "8bf15ad33a529359200bd419a72ca2dda841089b",
+        "version" : "0.8.0"
       }
     }
   ],

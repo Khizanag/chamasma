@@ -17,6 +17,9 @@ let package = Package(
     dependencies: [
         .package(path: "../DesignSystem"),
         .package(path: "../Domain"),
+        .package(url: "https://github.com/twostraws/CodeScanner", from: "2.3.2"),
+        .package(url: "https://github.com/lukaskubanek/LoremSwiftum.git", from: "2.2.1"),
+        .package(url: "https://github.com/exyte/chat", from: "0.0.4"),
     ],
     targets: [
         .target(
@@ -24,6 +27,9 @@ let package = Package(
             dependencies: [
                 "DesignSystem",
                 "Domain",
+                "CodeScanner",
+                "LoremSwiftum",
+                .product(name: "Chat", package: "chat"),
             ]
         ),
         .testTarget(

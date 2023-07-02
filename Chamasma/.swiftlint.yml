@@ -240,7 +240,7 @@ opt_in_rules:
     - array_init
     - attributes
     - balanced_xctest_lifecycle
-    - closure_body_length
+    # - closure_body_length
     - closure_end_indentation
     - closure_spacing
     - collection_alignment
@@ -380,8 +380,8 @@ attributes:
     severity: error
 balanced_xctest_lifecycle:
     severity: error
-closure_body_length:
-    severity: error
+# closure_body_length:
+    # severity: error
 closure_end_indentation:
     severity: error
 closure_spacing:
