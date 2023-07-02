@@ -8,58 +8,44 @@
 import SwiftUI
 
 struct ReviewPage: View {
-    @State var selectedPage = 0
+    // MARK: - Properties
+    @State private var selectedPage = 0
+    @State private var isReviewViewPresented = false
+    @State private var isEnterReviewViewPresented = false
+
+    // MARK: - Body
     var body: some View {
-        Picker("Options", selection: $selectedPage) {
-            Text("Description")
-                .padding()
-                .tag(0)
+        VStack(spacing: 16) {
+            Picker("Options", selection: $selectedPage) {
+                Text("Description")
+                    .padding()
+                    .tag(0)
 
-            Text("Reviews")
-                .padding()
-                .tag(1)
-        }
+                Text("Reviews")
+                    .padding()
+                    .tag(1)
+            }
 
-        .pickerStyle(SegmentedPickerStyle())
-        .foregroundStyle(Color.green)
-        .tint(.yellow)
-        .accentColor(.brown)
-        .padding(-4)
-        .background(Color.red)
+            .pickerStyle(SegmentedPickerStyle())
+            .foregroundStyle(Color.green)
+            .tint(.yellow)
+            .accentColor(.brown)
+            .padding(-4)
+            .background(Color.red)
 
-//        headerView
-//
-//        titleView
-//
-//        reviewsView
-//
-//        submitButton
-    }
+            Button("Review View") {
+                isReviewViewPresented = true
+            }
+            .navigationDestination(isPresented: $isReviewViewPresented) {
+                ReviewView(review: .example)
+            }
 
-    // MARK: - SubComponents
-    private var headerView: some View {
-        EmptyView()
-    }
-
-    private var titleView: some View {
-        VStack {
-            Divider()
-
-            Divider()
-        }
-    }
-
-    private var reviewsView: some View {
-        EmptyView()
-    }
-
-    private var writeReviewView: some View {
-        EmptyView()
-    }
-
-    private var submitButton: some View {
-        Button("rame") {
-            print("Button did tap")
+            Button("Enter review") {
+                isEnterReviewViewPresented = true
+            }
+            .navigationDestination(isPresented: $isEnterReviewViewPresented) {
+                WriteReviewView(viewModel: WriteReviewViewModel())
+            }
         }
     }
 }
