@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import LoremSwiftum
 
 struct User {
     let firstName: String
@@ -18,5 +19,5 @@ struct User {
 
 // MARK: - Example
 extension User {
-    static let example = User(firstName: "Giga", lastName: "Khizanishvili")
+    static let example = User(firstName: Lorem.firstName, lastName: Lorem.lastName)
 }
