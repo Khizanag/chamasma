@@ -10,15 +10,20 @@ import SwiftUI
 
 struct TabBarView: View {
     // MARK: - Properties
-    @State var selection = 4
+    @State var selection = 0
 
     // MARK: - Body
     var body: some View {
         TabView(selection: $selection) {
-            Text("Empty page")
+            CategoryView(title: "Burgers", meals: [
+                .Example.cheesburger,
+                .Example.chiliCheesburger,
+                .Example.hamburger,
+                .Example.salad,
+            ])
                 .tabItem {
                     Image(systemName: "circle")
-                    Text("Empty")
+                    Text("Category")
                 }
                 .tag(0)
 

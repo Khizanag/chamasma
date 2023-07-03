@@ -54,7 +54,7 @@ struct SwiftUIView_Previews: PreviewProvider {
             Color.gray
             CategoryView(
                 title: "Burger",
-                meals: Meal.Example.meals
+                meals: Meal.Example.all
             )
                 .padding()
         }
